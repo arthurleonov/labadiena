@@ -1,0 +1,196 @@
+$grid-columns: 12;
+$sm-width: 768px;
+$xm-width: 992px;
+$xl-width: 1200px;
+
+@mixin helper($property: margin, $size: 0, $size_naming: 0, $direction: all, $naming_direction: null) {
+  @if $property == margin {
+    $prefix: m;
+  } @else if $property == padding {
+    $prefix: p;
+  }
+  @if $direction == all {
+    $class: $prefix + '-' + $size_naming;
+    .#{$class} {
+      #{$property}: $size !important;
+    }
+    @media (max-width: $sm-width - 1px) {
+      $class: $prefix + '-xs-' + $size_naming;
+      .#{$class} {
+        #{$property}: $size !important;
+      }
+    }
+    @media (min-width: $sm-width) and (max-width: $xm-width - 1px) {
+      $class: $prefix + '-sm-' + $size_naming;
+      .#{$class} {
+        #{$property}: $size !important;
+      }
+    }
+    @media (min-width: $xm-width) and (max-width: $xl-width - 1px) {
+      $class: $prefix + '-xm-' + $size_naming;
+      .#{$class} {
+        #{$property}: $size !important;
+      }
+    }
+    @media (min-width: $xl-width - 1px) {
+      $class: $prefix + '-xl-' + $size_naming;
+      .#{$class} {
+        #{$property}: $size !important;
+      }
+    }
+    @include helper($property, $size, $size_naming, t, top);
+    @include helper($property, $size, $size_naming, r, right);
+    @include helper($property, $size, $size_naming, l, left);
+    @include helper($property, $size, $size_naming, b, bottom);
+  } @else {
+    $class: $prefix+'-' + $size_naming + '-' + $direction;
+    $temp_property: $property + '-' + $naming_direction;
+    .#{$class} {
+      #{$temp_property}: $size !important;
+    }
+    @media (max-width: $sm-width - 1px) {
+      $class: $prefix + '-xs-' + $size_naming + '-' + $direction;
+      .#{$class} {
+        #{$temp_property}: $size !important;
+      }
+    }
+    @media (min-width: $sm-width) and (max-width: $xm-width - 1px) {
+      $class: $prefix + '-sm-' + $size_naming + '-' + $direction;
+      .#{$class} {
+        #{$temp_property}: $size !important;
+      }
+    }
+    @media (min-width: $xm-width) and (max-width: $xl-width - 1px) {
+      $class: $prefix + '-xm-' + $size_naming + '-' + $direction;
+      .#{$class} {
+        #{$temp_property}: $size !important;
+      }
+    }
+    @media (min-width: $xl-width - 1px) {
+      $class: $prefix + '-xl-' + $size_naming + '-' + $direction;
+      .#{$class} {
+        #{$temp_property}: $size !important;
+      }
+    }
+  }
+}
+
+
+@mixin bottomShadowDefault() {
+  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: "");
+}
+
+.insetShadowDefault {
+  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: inset);
+}
+
+.shadowDefaultBottom {
+  @include box-shadow($x: 0px, $y: 2px, $blur: 7px, $color: $color-lightgrey);
+}
+
+.shadowDefault {
+  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: "");
+}
+
+.center-middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; /* Align center inline elements */
+  font-size: 0;
+  line-height: 0;
+  &:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  & > * {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+    font-size: $font-size-default;
+    position: relative;
+  }
+}
+
+.ignore-columns{
+  [class*="col-"]{
+        width: auto;
+      }
+}
+
+@include helper(margin);
+@include helper(margin, 0rem, '0rem');
+@include helper(margin, 0.1rem, '01rem');
+@include helper(margin, 0.2rem, '02rem');
+@include helper(margin, 0.3rem, '03rem');
+@include helper(margin, 0.4rem, '04rem');
+@include helper(margin, 0.5rem, '05rem');
+@include helper(margin, 0.2rem, '02rem');
+@include helper(margin, 0.6rem, '06rem');
+@include helper(margin, 0.7rem, '07rem');
+@include helper(margin, 0.8rem, '08rem');
+@include helper(margin, 0.9rem, '09rem');
+@include helper(margin, 1rem, 1rem);
+@include helper(margin, 1.2rem, 12rem);
+@include helper(margin, 1.3rem, 13rem);
+@include helper(margin, 1.4rem, 14rem);
+@include helper(margin, 1.5rem, 15rem);
+@include helper(margin, 2rem, 2rem);
+@include helper(margin, 2.5rem, 25rem);
+@include helper(margin, 3rem, 3rem);
+@include helper(margin, 4rem, 4rem);
+@include helper(margin, 5rem, 5rem);
+@include helper(margin, 6rem, 6rem);
+@include helper(margin, 7rem, 7rem);
+@include helper(margin, 7.5rem, 75rem);
+@include helper(margin, 8rem, 8rem);
+@include helper(margin, 10rem, 10rem);
+@include helper(margin, 10px, 10px);
+
+@include helper(padding);
+@include helper(padding, 0, '0rem');
+@include helper(padding, 0.1rem, '01rem');
+@include helper(padding, 0.2rem, '02rem');
+@include helper(padding, 0.3rem, '03rem');
+@include helper(padding, 0.35rem, '035rem');
+@include helper(padding, 0.4rem, '04rem');
+@include helper(padding, 0.5rem, '05rem');
+@include helper(padding, 0.6rem, '06rem');
+@include helper(padding, 0.7rem, '07rem');
+@include helper(padding, 0.8rem, '08rem');
+@include helper(padding, 0.9rem, '09rem');
+@include helper(padding, 1rem, 1rem);
+@include helper(padding, 1.1rem, 11rem);
+@include helper(padding, 1.2rem, 12rem);
+@include helper(padding, 1.3rem, 13rem);
+@include helper(padding, 1.4rem, 14rem);
+@include helper(padding, 1.5rem, 15rem);
+@include helper(padding, 1.6rem, 16rem);
+@include helper(padding, 1.7rem, 17rem);
+@include helper(padding, 1.8rem, 18rem);
+@include helper(padding, 1.9rem, 19rem);
+@include helper(padding, 2rem, 2rem);
+@include helper(padding, 2.2rem, 22rem);
+@include helper(padding, 2.5rem, 25rem);
+@include helper(padding, 3rem, 3rem);
+@include helper(padding, 3.2rem, 32rem);
+@include helper(padding, 3.5rem, 35rem);
+@include helper(padding, 4rem, 4rem);
+@include helper(padding, 4.5rem, 45rem);
+@include helper(padding, 5rem, 5rem);
+@include helper(padding, 5.5rem, 55rem);
+@include helper(padding, 6rem, 6rem);
+@include helper(padding, 6.5rem, 65rem);
+@include helper(padding, 7rem, 7rem);
+@include helper(padding, 7.5rem, 75rem);
+@include helper(padding, 8rem, 8rem);
+@include helper(padding, 9rem, 9rem);
+@include helper(padding, 10rem, 10rem);
+@include helper(padding, 20rem, 20rem);
+@include helper(padding, 30px, 30px);

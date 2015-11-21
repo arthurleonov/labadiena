@@ -1,0 +1,15 @@
+.btn {
+	&.call-to-action {
+		background-color: $color-black;
+		color: $color-white;
+		margin-top: 2rem;
+		padding: 1rem;
+		border-radius: 0;
+		&:hover {
+
+		}
+	}
+	&.width-100 {
+		width: 100%;
+	}
+}
