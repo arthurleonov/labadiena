@@ -1,0 +1,12 @@
+h1,h2,h3,h4,h5 {
+	font-family: $primary-font;
+}
+p,span, a, label {
+	font-family: $secondary-font;
+	color: $color-black;
+}
+
+
+.white {
+	color: $color-white;
+}

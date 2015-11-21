@@ -1,0 +1,55 @@
+body,html {
+	background-color: $color-background;
+	height: 100%;
+}
+
+.padding-left-0 {
+	padding-left: 0;
+}
+
+.padding-right-0 {
+	padding-right: 0;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+.padding-10 {
+	padding-top: 10rem;
+}
+
+
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+
+.vertical-center { // Flexbox solution for vertical aligning
+	  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	  min-height: 100vh; /* These two lines are counted as one.      */
+
+	  display: flex;
+	  align-items: center;
+	}
