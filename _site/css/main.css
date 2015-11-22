@@ -168,7 +168,7 @@ a {
   margin-top: 1.2rem; }
 
 .homepage-content {
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-left: 5rem;
   padding-right: 5rem; }
   .homepage-content .content-title {
@@ -198,12 +198,12 @@ a {
       text-align: right; }
   .homepage-content .sub-content {
     margin-top: 2.5rem; }
-  .homepage-content .photo-middle {
-    margin-top: 16rem; }
   .homepage-content .photo-middle2 {
     margin-top: 10rem; }
   .homepage-content .photo-right {
     margin-top: 4rem; }
+  .homepage-content .photo-middle {
+    margin-top: 15rem; }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
@@ -259,7 +259,7 @@ a {
 .about {
   position: relative;
   margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   padding-left: 0;
   padding-right: 0; }
   .about .bg-tilted {
@@ -296,7 +296,7 @@ a {
 @media (max-width: 480px) {
   .about {
     margin-top: 4rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
     .about h1 {
       margin-top: 2rem; }
     .about p {
