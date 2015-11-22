@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
         text-underline: none; }
 
 p, span, a, label {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Times, "Times New Roman", serif;
   color: #1b1a1c; }
 
 .white {
@@ -233,9 +233,13 @@ a {
     top: -5%;
     text-align: center;
     line-height: 5rem; }
+    .content1 .content-title a, .content1 .content-title span {
+      font-family: Georgia, Times, "Times New Roman", serif; }
     .content1 .content-title a:after {
       height: 5px;
       margin-top: 5px; }
+    .content1 .content-title a:hover:after {
+      width: 80%; }
   .content1 .sub-content {
     margin-top: 2.5rem; }
   .content1 .photo-middle {
@@ -249,9 +253,27 @@ a {
   .content1 {
     padding-top: 6rem; }
     .content1 .content-title {
-      left: 0; } }
+      left: 0; }
+
+  .mobile-padding {
+    padding-top: 6rem; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .content1 {
     padding-top: 6rem; } }
 /* Large desktop */
+.about {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: #1b1a1c;
+  position: relative; }
+  .about .bg-a {
+    color: #ffffff;
+    font-size: 45rem;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 41%; }
+  .about p {
+    color: #ffffff;
+    padding: 20rem 10rem; }
