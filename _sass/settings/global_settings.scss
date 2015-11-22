@@ -45,11 +45,19 @@ body,html {
 }
 
 
-
 .vertical-center { // Flexbox solution for vertical aligning
-	  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-	  min-height: 100vh; /* These two lines are counted as one.      */
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one.      */
 
-	  display: flex;
-	  align-items: center;
-	}
+  display: flex;
+  align-items: center;
+}
+
+.color-black {
+	color: $color-black;
+}
+
+.color-lightgrey {
+	color: $color-lightgrey;
+}
+
