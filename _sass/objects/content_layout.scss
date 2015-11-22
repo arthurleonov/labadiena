@@ -1,4 +1,4 @@
-.content1 {
+.homepage-content {
     padding-top: 10rem;
     .content-title {
         position: absolute;
@@ -6,9 +6,15 @@
         left: -40%;
         top: -5%;
         text-align: center;
-        line-height: 5rem;
+        line-height: 3rem;
         a, span {
              font-family: $primary-font;
+        }
+        a {
+            font-size: 2.4rem;
+        }
+        span {
+            1.5rem;
         }
         a:after {
           height: 5px;
@@ -20,6 +26,16 @@
             }
         }
     }
+
+    .main-title-2 {
+        position: absolute;
+        right: 8%;
+        top: -30%;
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
     .sub-content {
         margin-top: 2.5rem;
     }
@@ -27,10 +43,12 @@
         margin-top: 15rem;
     }
 
-    img {
-        &:hover {
-            background-color: red;
-        }
+    .photo-middle2 {
+        margin-top: 10rem;
+    }
+
+    .photo-right {
+        margin-top: 4rem;
     }
 }
 

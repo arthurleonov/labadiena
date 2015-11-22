@@ -11,6 +11,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
+      // menu.productHover();
       
     },
     openCloseMenu: function() {
@@ -22,26 +23,44 @@ var menu = function() {
 
 
     	// container animation
-		tl.from(defaults.menuContainer, 1, {
-		    x: '-1000',
-		    autoAlpha: 0,
+		tl.from(defaults.menuContainer, 0.8, {
+		    y: '-500',
+        autoAlpha: 0,
 		    force3D: true,
 		    ease: Power3.easeOut
-		  })
+		  });
 		  // text animation 
 
-		tl.from(defaults.menuItems, 0.6, {
-		  x: '-600',
+		tl.staggerFrom(defaults.menuItems, 0.4, {
+		  y: '-200',
 		  autoAlpha: 0,
 		  force3D: true,
 		  ease: Expo.easeOut
-		}, '-=0.3');
+		}, '-=0.5', 0.1);
 
 		// toggle animation
     	$(defaults.menu).on('click', function(){
-  			tl.reversed() ? tl.play():tl.reverse();
+
+          $(this).delay(200).queue(function(){
+            $(this).find('.menu-bar').toggleClass('menu-bar-white');
+            $(this).find('.logo').toggleClass('color-white');
+            $(this).dequeue();
+          });
+
+          $(this).toggleClass('toggled');
+
+  			tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
     	});
-    },   
+    },
+    productHover: function() {
+    	$('.js-hover').hover(function(e) {
+           $(this).find('.js-item-hover').addClass('hover');
+           $(this).find('.product').addClass('hover');
+            }, function(){
+               $(this).find('.js-item-hover').removeClass('hover');
+               $(this).find('.product').removeClass('hover');
+      	});
+    }   
   };
 }();
 
