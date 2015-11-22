@@ -198,12 +198,12 @@ a {
       text-align: right; }
   .homepage-content .sub-content {
     margin-top: 2.5rem; }
-  .homepage-content .photo-middle {
-    margin-top: 16rem; }
   .homepage-content .photo-middle2 {
     margin-top: 10rem; }
   .homepage-content .photo-right {
     margin-top: 4rem; }
+  .homepage-content .photo-middle {
+    margin-top: 15rem; }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
