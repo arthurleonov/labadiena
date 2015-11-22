@@ -199,7 +199,7 @@ a {
   .homepage-content .sub-content {
     margin-top: 2.5rem; }
   .homepage-content .photo-middle {
-    margin-top: 1.5rem; }
+    margin-top: 15rem; }
   .homepage-content .photo-middle2 {
     margin-top: 10rem; }
   .homepage-content .photo-right {
@@ -227,6 +227,8 @@ a {
       text-align: none; }
     .homepage-content .photo-right {
       margin-top: 0; }
+    .homepage-content .photo-middle {
+      margin-top: 1.5rem; }
     .homepage-content .sub-content {
       margin-top: 1.7rem; }
 
@@ -250,7 +252,9 @@ a {
       top: -30%; }
       .homepage-content .main-title-2 h1 {
         font-size: 2.2rem;
-        text-align: none; } }
+        text-align: none; }
+    .homepage-content .photo-middle {
+      margin-top: 4rem; } }
 /* Large desktop */
 .about {
   position: relative;

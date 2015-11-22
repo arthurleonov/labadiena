@@ -44,7 +44,7 @@
         margin-top: 2.5rem;
     }
     .photo-middle {
-        margin-top: 1.5rem;
+        margin-top: 15rem;
     }
 
     .photo-middle2 {
@@ -89,6 +89,10 @@
         .photo-right {
             margin-top: 0;
         }
+
+        .photo-middle {
+            margin-top: 1.5rem;
+        }
         .sub-content {
             margin-top: 1.7rem;
         }
@@ -121,6 +125,10 @@
                 font-size: 2.2rem;
                 text-align: none;
             }
+        }
+
+        .photo-middle {
+            margin-top: 4rem;
         }
     }
 }
