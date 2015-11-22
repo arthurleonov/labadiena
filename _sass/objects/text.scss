@@ -76,7 +76,7 @@ a, {
 		transition: width .5s ease, background-color .5s ease;
 	}
 	transition: color .5s ease;
-	&:hover, &:hover span {
+	&:hover, &:hover span, &.hover {
 		color: $color-lightbrown;
 		text-decoration: none;
 		cursor: pointer; cursor: hand;

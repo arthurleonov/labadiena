@@ -108,12 +108,12 @@ a {
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  a:hover, a:hover span {
+  a:hover, a:hover span, a.hover {
     color: #bf7546;
     text-decoration: none;
     cursor: pointer;
     cursor: hand; }
-    a:hover:after, a:hover span:after {
+    a:hover:after, a:hover span:after, a.hover:after {
       width: 100%;
       background: #bf7546;
       text-underline: none; }
@@ -269,13 +269,30 @@ a {
 .product-view {
   margin-top: 10rem;
   margin-bottom: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   position: relative; }
+  .product-view .row {
+    margin-bottom: 3rem; }
   .product-view .title {
     margin-top: 0rem;
     position: absolute;
-    top: 5%;
-    left: 0; }
+    top: 6%;
+    left: 0;
+    z-index: 2; }
   .product-view .btn-buy {
     position: absolute;
-    right: 3rem;
-    bottom: 0; }
+    right: 3.7rem;
+    bottom: 0.8rem;
+    z-index: 3; }
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .product-view {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .product-view .product {
+      margin-bottom: 2rem; } }
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */

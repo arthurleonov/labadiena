@@ -1,18 +1,58 @@
 .product-view {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     position: relative;
+    .row {
+        margin-bottom: 3rem;
+    }
+    .product {
+        // &.hover {
+        //     z-index: 1;
+        //     outline: 3px solid $color-black;
+        //     outline-offset: -1rem;
+        // }   
+
+    }
     .title {
         margin-top: 0rem;
         position: absolute;
-        top: 5%;
+        top: 6%;
         left: 0;
+        z-index: 2;
     }
 
     .btn-buy {
         position: absolute;
-        right: 3rem;
-        bottom: 0;
+        right: 3.7rem;
+        bottom: 0.8rem;
+        z-index: 3;
 
     }
 }
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .product-view {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .product {
+            margin-bottom: 2rem;
+        }
+    }
+   
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+   
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { }

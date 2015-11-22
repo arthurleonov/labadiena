@@ -11,6 +11,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
+      menu.productHover();
       
     },
     openCloseMenu: function() {
@@ -41,7 +42,16 @@ var menu = function() {
     	$(defaults.menu).on('click', function(){
   			tl.reversed() ? tl.play():tl.reverse();
     	});
-    },   
+    },
+    productHover: function() {
+    	$('.js-hover').hover(function(e) {
+           $(this).find('.js-item-hover').addClass('hover');
+           $(this).find('.product').addClass('hover');
+            }, function(){
+               $(this).find('.js-item-hover').removeClass('hover');
+               $(this).find('.product').removeClass('hover');
+      	});
+    }   
   };
 }();
 
