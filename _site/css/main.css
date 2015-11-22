@@ -219,7 +219,7 @@ a {
       .homepage-content .content-title span {
         font-size: 2.5rem; }
     .homepage-content .see-more {
-      padding-top: 2rem;
+      padding-top: 1.5rem;
       display: block;
       font-size: 1.4rem;
       font-family: Georgia, Times, "Times New Roman", serif; }
@@ -291,9 +291,18 @@ a {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .about {
-    margin-top: 2rem; } }
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
+    .about h1 {
+      margin-top: 2rem; }
+    .about p {
+      padding: 0rem 2rem; }
+    .about .bg-tilted {
+      position: relative; }
+      .about .bg-tilted:before {
+        height: 400px; } }
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .about {
     margin-top: 4rem;
     margin-bottom: 5rem; }
