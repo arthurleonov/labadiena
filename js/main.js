@@ -23,7 +23,7 @@ var menu = function() {
 
 
     	// container animation
-		tl.from(defaults.menuContainer, 1, {
+		tl.from(defaults.menuContainer, 0.8, {
 		    y: '-500',
         autoAlpha: 0,
 		    force3D: true,
@@ -31,18 +31,19 @@ var menu = function() {
 		  });
 		  // text animation 
 
-		tl.from(defaults.menuItems, 0.6, {
+		tl.staggerFrom(defaults.menuItems, 0.4, {
 		  y: '-200',
 		  autoAlpha: 0,
 		  force3D: true,
 		  ease: Expo.easeOut
-		}, '-=0.7');
+		}, '-=0.5', 0.1);
 
 		// toggle animation
     	$(defaults.menu).on('click', function(){
 
           $(this).delay(200).queue(function(){
             $(this).find('.menu-bar').toggleClass('menu-bar-white');
+            $(this).find('.logo').toggleClass('color-white');
             $(this).dequeue();
           });
 

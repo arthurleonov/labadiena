@@ -47,6 +47,9 @@ body, html {
 .color-black {
   color: #1b1a1c; }
 
+.color-white {
+  color: #ffffff; }
+
 .color-lightgrey {
   color: #b3b3b3; }
 
@@ -296,7 +299,9 @@ a {
   margin-top: 1rem;
   padding-top: 12px;
   transition: all 500ms cubic-bezier(1, 0, 0.645, 0.65);
-  z-index: 999999999; }
+  z-index: 999999999;
+  cursor: pointer;
+  cursor: hand; }
 
 .sr {
   position: absolute;
