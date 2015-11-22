@@ -11,7 +11,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
-      menu.productHover();
+      // menu.productHover();
       
     },
     openCloseMenu: function() {

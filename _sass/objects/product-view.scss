@@ -7,19 +7,26 @@
     .row {
         margin-bottom: 3rem;
     }
-    .product {
-        // &.hover {
-        //     z-index: 1;
-        //     outline: 3px solid $color-black;
-        //     outline-offset: -1rem;
-        // }   
-
+    .empty-space {
+        margin-top: 10rem;
+    }
+    .bottom-right {
+        margin-top: 2rem;
+    }
+    .middle-margin {
+        margin-top: 5rem;
+    }
+    .main-title {
+        position: absolute;
+        right: 8%;
+        top: -10%;
+        font-size: 4rem;
     }
     .title {
         margin-top: 0rem;
         position: absolute;
-        top: 6%;
-        left: 0;
+        top: 3%;
+        left: -2%;
         z-index: 2;
     }
 
