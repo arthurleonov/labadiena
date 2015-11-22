@@ -51,27 +51,8 @@ body, html {
 
 h1, h2, h3, h4, h5 {
   font-family: Georgia, Times, "Times New Roman", serif; }
-  h1 a, h2 a, h3 a, h4 a, h5 a {
-    text-decoration: none;
-    color: inherit;
-    padding-bottom: 3px; }
-    h1 a:after, h2 a:after, h3 a:after, h4 a:after, h5 a:after {
-      content: '';
-      display: block;
-      margin: auto;
-      height: 6px;
-      width: 0px;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
-    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-      color: #b3b3b3;
-      text-decoration: none; }
-      h1 a:hover:after, h2 a:hover:after, h3 a:hover:after, h4 a:hover:after, h5 a:hover:after {
-        width: 100%;
-        background: #1b1a1c;
-        text-underline: none; }
 
-p, span, a, label {
+p, span, label {
   font-family: Arial, Times, "Times New Roman", serif;
   color: #1b1a1c; }
 
@@ -117,7 +98,8 @@ p, span, a, label {
 a {
   text-decoration: none;
   color: #1b1a1c;
-  padding-bottom: 3px; }
+  padding-bottom: 3px;
+  transition: color .5s ease; }
   a:after {
     content: '';
     display: block;
@@ -136,12 +118,18 @@ a {
       background: #bf7546;
       text-underline: none; }
 
-.btn.call-to-action {
-  background-color: #1b1a1c;
-  color: #ffffff;
+.btn.default {
+  border: 2px solid #1b1a1c;
+  background-color: inherit;
+  color: #1b1a1c;
   margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 0; }
+  padding: 0.5rem;
+  border-radius: 6px;
+  min-width: 10rem;
+  transition: all .2s ease; }
+  .btn.default:hover {
+    background-color: #1b1a1c;
+    color: #ffffff; }
 .btn.width-100 {
   width: 100%; }
 
@@ -277,3 +265,17 @@ a {
   .about p {
     color: #ffffff;
     padding: 20rem 10rem; }
+
+.product-view {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  position: relative; }
+  .product-view .title {
+    margin-top: 0rem;
+    position: absolute;
+    top: 5%;
+    left: 0; }
+  .product-view .btn-buy {
+    position: absolute;
+    right: 3rem;
+    bottom: 0; }
