@@ -24,23 +24,31 @@ var menu = function() {
 
     	// container animation
 		tl.from(defaults.menuContainer, 1, {
-		    x: '-1000',
-		    autoAlpha: 0,
+		    y: '-500',
+        autoAlpha: 0,
 		    force3D: true,
 		    ease: Power3.easeOut
-		  })
+		  });
 		  // text animation 
 
 		tl.from(defaults.menuItems, 0.6, {
-		  x: '-600',
+		  y: '-200',
 		  autoAlpha: 0,
 		  force3D: true,
 		  ease: Expo.easeOut
-		}, '-=0.3');
+		}, '-=0.7');
 
 		// toggle animation
     	$(defaults.menu).on('click', function(){
-  			tl.reversed() ? tl.play():tl.reverse();
+
+          $(this).delay(200).queue(function(){
+            $(this).find('.menu-bar').toggleClass('menu-bar-white');
+            $(this).dequeue();
+          });
+
+          $(this).toggleClass('toggled');
+
+  			tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
     	});
     },
     productHover: function() {
