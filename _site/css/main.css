@@ -289,11 +289,14 @@ a {
     padding: 0rem 10rem; }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .about {
+    margin-top: 2rem; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .about {
     margin-top: 4rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 5rem; }
     .about h1 {
       margin-top: 3rem; }
     .about p {
@@ -303,6 +306,10 @@ a {
       .about .bg-tilted:before {
         height: 400px; } }
 /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .about {
+    margin-top: 4rem;
+    margin-bottom: 7rem; } }
 /* Large desktop */
 .product-view {
   margin-top: 10rem;
