@@ -1,24 +1,63 @@
 .content1 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 10rem;
     .content-title {
-            font-size: 11rem;
-            position: absolute;
-            z-index: 999999;
-            left: -40%;
-            top: -5%;
-            text-align: center;
+        position: absolute;
+        z-index: 999999;
+        left: -40%;
+        top: -5%;
+        text-align: center;
+        line-height: 5rem;
+        a, span {
+             font-family: $primary-font;
+        }
+        a:after {
+          height: 5px;
+          margin-top: 5px;
+        }
+        a:hover {
+            &:after {
+                width: 80%;
+            }
+        }
     }
     .sub-content {
         margin-top: 2.5rem;
     }
     .photo-middle {
-        margin-top: 25rem;
+        margin-top: 15rem;
+    }
+
+    img {
+        &:hover {
+            background-color: red;
+        }
     }
 }
 
 
+/* Landscape phones and down */
+@media (max-width: 480px) { }
 
-.test   {
-    margin-top: 10rem;
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .content1 {
+        padding-top: 6rem;
+        .content-title {
+            left: 0;
+        }
+    }
+
+    .mobile-padding {
+        padding-top: 6rem;
+    }
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .content1 {
+        padding-top: 6rem;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { }

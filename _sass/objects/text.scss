@@ -1,6 +1,30 @@
 h1,h2,h3,h4,h5 {
 	font-family: $primary-font;
+	a {
+	 	text-decoration: none;
+	 	color: inherit;
+		padding-bottom: 3px;
+		&:after {
+			content: '';
+			display: block;
+			margin: auto;
+			height: 6px;
+			width: 0px;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease;
+		}
+		&:hover {
+			color: $color-lightgrey;
+			text-decoration: none;
+			&:after {
+				width: 100%;
+				background: $color-black;
+				text-underline: none;
+			}
+		}
+	}
 }
+
 p,span, a, label {
 	font-family: $secondary-font;
 	color: $color-black;
@@ -9,4 +33,79 @@ p,span, a, label {
 
 .white {
 	color: $color-white;
+}
+
+.font-xs {
+  font-size: $font-xs;
+}
+
+.font-s {
+  font-size: $font-s;
+}
+
+.font-m {
+  font-size: $font-m;
+}
+
+.font-mm {
+  font-size: $font-mm;
+}
+
+.font-mmm {
+  font-size: $font-mmm;
+}
+
+
+.font-xm {
+  font-size: $font-xm;
+}
+
+.font-xxm {
+  font-size: $font-xxm;
+}
+
+.font-l {
+  font-size: $font-l;
+}
+
+.font-xl {
+  font-size: $font-xl;
+}
+
+.font-xxl {
+  font-size: $font-xxl;
+}
+
+.font-xxxl {
+  font-size: $font-xxxl;
+}
+
+.font-xxxxxl {
+	font-size: $font-xxxxxl;
+}
+
+
+a, {
+  	text-decoration: none;
+  	color: $color-black;
+	padding-bottom: 3px;
+	&:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	&:hover, &:hover span {
+		color: $color-lightbrown;
+		text-decoration: none;
+		cursor: pointer; cursor: hand;
+		&:after {
+			width: 100%;
+			background: $color-lightbrown;
+			text-underline: none;
+		}
+	}
 }

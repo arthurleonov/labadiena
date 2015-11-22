@@ -1,0 +1,19 @@
+.about {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	background-color: $color-black;
+	position: relative;
+	.bg-a {
+		color: $color-white;
+		font-size: 45rem;
+		opacity: 0.1;
+		position: absolute;
+		top: 0;
+		left: 41%;
+	}
+	p {
+		color: $color-white;
+		padding: 20rem 10rem;;
+	}
+}
+
