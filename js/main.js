@@ -12,7 +12,8 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
-      menu.menuScroll();
+      menu.menuOverlayAndScoll();
+      // menu.stopScroll();
       // menu.productHover();
       
     },
@@ -43,14 +44,6 @@ var menu = function() {
 		// toggle animation
     	$(defaults.menu).on('click', function(){
 
-          $(this).delay(200).queue(function(){
-            $(this).find('.menu-bar').toggleClass('menu-bar-white');
-            $(this).dequeue();
-          });
-
-          $('.frame').find('.logo').toggleClass('logo-white');
-          $(this).toggleClass('toggled');
-
           tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
           
     	});
@@ -64,18 +57,6 @@ var menu = function() {
                $(this).find('.product').removeClass('hover');
       	});
     },
-    menuScroll: function() {
-      $(document).scroll(
-          function() {
-            if($(document).scrollTop() >= 100) {
-              $(defaults.topBar).addClass('topBar-white');
-            } else {
-               $(defaults.topBar).removeClass('topBar-white');
-            }
-          }
-      );
-    }   
-  };
 }();
 
 // 1. fade in and fade out
