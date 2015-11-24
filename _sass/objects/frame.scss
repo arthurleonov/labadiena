@@ -1,11 +1,12 @@
 .frame {
 	position: relative;
 	.top {
-		position: absolute;
+		position: fixed;
 		top: 0%;
+		z-index: 99999999;
 		background-color: $color-black-trans-003;
   		width: 100%;	
-  		height: 80px;
+  		height: 70px;
  	
 	}
 }
@@ -20,10 +21,3 @@
 }
 
 
-
-.logo {
-  color: $color-black;
-  left: 50%;
-  margin-top: 1.2rem;
-  // text-shadow: 0px 0px 5px rgba(35, 31, 32, 0.39);
-}

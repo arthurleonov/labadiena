@@ -17,9 +17,9 @@ var menu = function() {
     openCloseMenu: function() {
 
     	var tl = new TimelineMax({
-		  paused: true,
-		  reversed: true,
-		}); // set new timelinemax
+  		  paused: true,
+  		  reversed: true,
+		  }); // set new timelinemax
 
 
     	// container animation
@@ -27,29 +27,30 @@ var menu = function() {
 		    y: '-500',
         autoAlpha: 0,
 		    force3D: true,
-		    ease: Power3.easeOut
+		    ease: Expo.easeOut
 		  });
 		  // text animation 
 
-		tl.staggerFrom(defaults.menuItems, 0.4, {
+		tl.from(defaults.menuItems, 0.4, {
 		  y: '-200',
 		  autoAlpha: 0,
 		  force3D: true,
 		  ease: Expo.easeOut
-		}, '-=0.5', 0.1);
+		}, '-=0.5');
 
 		// toggle animation
     	$(defaults.menu).on('click', function(){
 
           $(this).delay(200).queue(function(){
             $(this).find('.menu-bar').toggleClass('menu-bar-white');
-            $(this).find('.logo').toggleClass('color-white');
             $(this).dequeue();
           });
 
+          $('.frame').find('.logo').toggleClass('logo-white');
           $(this).toggleClass('toggled');
 
-  			tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
+          tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
+          
     	});
     },
     productHover: function() {
