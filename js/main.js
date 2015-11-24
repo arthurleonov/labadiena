@@ -3,7 +3,8 @@ var menu = function() {
   var defaults = {
  	menu: '.js-menu',
  	menuContainer: '.menu-container',
- 	menuItems: '.js-menu-items h3'
+ 	menuItems: '.js-menu-items h3',
+  topBar: '.js-topBar',
   };
   return {
     init: function (configuration) {
@@ -11,6 +12,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
+      menu.menuScroll();
       // menu.productHover();
       
     },
@@ -61,6 +63,17 @@ var menu = function() {
                $(this).find('.js-item-hover').removeClass('hover');
                $(this).find('.product').removeClass('hover');
       	});
+    },
+    menuScroll: function() {
+      $(document).scroll(
+          function() {
+            if($(document).scrollTop() >= 100) {
+              $(defaults.topBar).addClass('topBar-white');
+            } else {
+               $(defaults.topBar).removeClass('topBar-white');
+            }
+          }
+      );
     }   
   };
 }();
