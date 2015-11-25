@@ -346,12 +346,24 @@ a {
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .product-view {
-    padding-left: 3rem;
-    padding-right: 3rem; }
-    .product-view .product {
-      margin-bottom: 2rem; } }
+  .product-container {
+    margin-top: 4rem; }
+    .product-container .product-items {
+      margin-top: 2.5rem;
+      position: relative; }
+      .product-container .product-items h4 {
+        position: initial;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        font-size: 1.5rem; }
+      .product-container .product-items img {
+        padding-right: 0rem; } }
 /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .filter-container h2 {
+    font-size: 1.7rem; }
+  .filter-container h3 {
+    font-size: 1.3rem; } }
 /* Large desktop */
 .top-nav-icons {
   position: fixed;
