@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
 body, html {
   background-color: #f4f4f4;
   height: 100%;
@@ -54,11 +54,12 @@ body, html {
   color: #b3b3b3; }
 
 h1, h2, h3, h4, h5 {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+  font-family: "Georgia", serif; }
 
-p, span, label {
-  font-family: Arial, Times, "Times New Roman", serif;
-  color: #1b1a1c; }
+p, label {
+  font-family: "Roboto", sans-serif;
+  color: #1b1a1c;
+  letter-spacing: 0.1px; }
 
 .white {
   color: #ffffff; }
@@ -179,7 +180,7 @@ a {
     text-align: center;
     line-height: 3rem; }
     .homepage-content .content-title a, .homepage-content .content-title span {
-      font-family: Georgia, Times, "Times New Roman", serif; }
+      font-family: "Georgia", serif; }
     .homepage-content .content-title a {
       font-size: 3rem; }
     .homepage-content .content-title span {
@@ -222,7 +223,7 @@ a {
       padding-top: 1.5rem;
       display: block;
       font-size: 1.4rem;
-      font-family: Georgia, Times, "Times New Roman", serif; }
+      font-family: "Georgia", serif; }
     .homepage-content .main-title-2 h1 {
       text-align: none; }
     .homepage-content .photo-right {
@@ -324,36 +325,18 @@ a {
     margin-top: 4rem;
     margin-bottom: 7rem; } }
 /* Large desktop */
-.product-view {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  position: relative; }
-  .product-view .row {
-    margin-bottom: 3rem; }
-  .product-view .empty-space {
-    margin-top: 10rem; }
-  .product-view .bottom-right {
-    margin-top: 2rem; }
-  .product-view .middle-margin {
-    margin-top: 5rem; }
-  .product-view .main-title {
-    position: absolute;
-    right: 8%;
-    top: -10%;
-    font-size: 4rem; }
-  .product-view .title {
-    margin-top: 0rem;
-    position: absolute;
-    top: 3%;
-    left: -2%;
-    z-index: 2; }
-  .product-view .btn-buy {
-    position: absolute;
-    right: 3.7rem;
-    bottom: 0.8rem;
-    z-index: 3; }
+.product-container {
+  margin-top: 4rem; }
+  .product-container .product-items {
+    margin-top: 2.5rem;
+    position: relative; }
+    .product-container .product-items h4 {
+      margin-bottom: 0rem;
+      position: absolute;
+      top: 2%;
+      left: -10%; }
+    .product-container .product-items img {
+      padding-right: 3rem; }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */

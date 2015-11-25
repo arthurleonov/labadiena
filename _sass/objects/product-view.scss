@@ -1,43 +1,20 @@
-.product-view {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    position: relative;
-    .row {
-        margin-bottom: 3rem;
-    }
-    .empty-space {
-        margin-top: 10rem;
-    }
-    .bottom-right {
-        margin-top: 2rem;
-    }
-    .middle-margin {
-        margin-top: 5rem;
-    }
-    .main-title {
-        position: absolute;
-        right: 8%;
-        top: -10%;
-        font-size: 4rem;
-    }
-    .title {
-        margin-top: 0rem;
-        position: absolute;
-        top: 3%;
-        left: -2%;
-        z-index: 2;
-    }
-
-    .btn-buy {
-        position: absolute;
-        right: 3.7rem;
-        bottom: 0.8rem;
-        z-index: 3;
-
+.product-container {
+    margin-top: 4rem;
+    .product-items {
+        margin-top: 2.5rem;
+        position: relative;
+        h4 {
+            margin-bottom: 0rem;
+            position: absolute;
+            top: 2%;
+            left: -10%;
+        }
+        img {
+            padding-right: 3rem;
+        }
     }
 }
+
 
 
 
@@ -53,12 +30,12 @@
             margin-bottom: 2rem;
         }
     }
-   
+
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-   
+
 }
 
 /* Large desktop */
