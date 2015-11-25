@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5 {
 p, label {
   font-family: "Roboto", sans-serif;
   color: #1b1a1c;
-  letter-spacing: 0.1px; }
+  letter-spacing: 0.1px;
+  margin: 0 0 5px; }
 
 .white {
   color: #ffffff; }
@@ -325,6 +326,10 @@ a {
     margin-top: 4rem;
     margin-bottom: 7rem; } }
 /* Large desktop */
+.filter-container {
+  margin-top: 6rem;
+  padding-left: 2rem; }
+
 .product-container {
   margin-top: 4rem; }
   .product-container .product-items {
