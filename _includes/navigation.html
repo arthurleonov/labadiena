@@ -1,5 +1,5 @@
-<div class="container menu-container">
-    <div class="row text-center js-menu-items">
+<div class="menu-container">
+    <div class="row text-center menu-items js-menu-items">
         <div class="table-align">
             <div class="table-vertical-align">
                 <div class="col-md-3">
@@ -32,11 +32,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- Dark menu overlay -->
 </div>
 
 
-    <div class="top-nav-icons row">
+<div class="container-fluid">
+    <div class="row"> <!-- Top nav icons and logo are above the frame for z-index. I ensure it always will stay above everything even the frame animations. -->
+            <div class="top-nav-icons">
         <div class="col-xs-3">
             <div href="#" class="button js-menu">
               <span class="sr">Toggle Navigation</span>
@@ -51,7 +53,15 @@
         <div class="col-xs-3">
         </div>
     </div>
-    <div class="frame">
-        <div class="top js-topBar">
-        </div>
     </div>
+        
+    </div>
+</div>
+
+
+<div class="frame">
+    <div class="top js-topBar">
+    </div>
+</div> <!-- the top frame. -->
+
+

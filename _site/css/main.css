@@ -370,7 +370,6 @@ a {
   width: 100%;
   z-index: 999999999; }
   .top-nav-icons .logo {
-    left: 50%;
     margin-top: 0.9rem;
     transition: all 2s ease; }
     .top-nav-icons .logo.logo-white {
@@ -487,7 +486,7 @@ a {
   100% {
     bottom: 0;
     -webkit-transform: rotate(0); } }
-.js-menu-items {
+.menu-items {
   height: 100%; }
 
 .menu-container {
