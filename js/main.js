@@ -13,12 +13,8 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
-<<<<<<< HEAD
-      menu.menuScrollOverlay();
-=======
       menu.menuOverlayAndScoll();
       // menu.stopScroll();
->>>>>>> 4a3878aaf12ea5b1c6e4ec6b78b076c92a471f49
       // menu.productHover();
       
     },
@@ -62,7 +58,6 @@ var menu = function() {
                $(this).find('.product').removeClass('hover');
       	});
     },
-<<<<<<< HEAD
     menuScrollOverlay: function() {
 
       $(defaults.menu).on('click', function(){
@@ -92,7 +87,5 @@ var menu = function() {
       ); // change frame background on scroll
     }   
   };
-=======
->>>>>>> 4a3878aaf12ea5b1c6e4ec6b78b076c92a471f49
 }();
 
