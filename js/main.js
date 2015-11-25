@@ -13,7 +13,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
-      menu.menuOverlayAndScoll();
+      menu.menuScrollOverlay();
       // menu.stopScroll();
       // menu.productHover();
       

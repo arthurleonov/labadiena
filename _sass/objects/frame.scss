@@ -1,27 +1,23 @@
 .frame {
-	position: relative;
-	.top {
-		position: fixed;
-		top: 0%;
+  position: relative;
+  .top {
+    position: fixed;
+    top: 0%;
     z-index: 90;
-		background-color: $color-black-trans-003;
-  		width: 100%;	
-  		height: 70px;
-  		transition: all .3s ease;
-  		&.topBar-white {
-  			background-color: $color-white;
-  			border-bottom: 1px solid $color-black-trans-01;
-  		}	
-	}
+    background-color: $color-black-trans-003;
+      width: 100%;  
+      height: 70px;
+      transition: all .3s ease;
+      &.topBar-white {
+        background-color: $color-white;
+        border-bottom: 1px solid $color-black-trans-01;
+      } 
+  }
 }
 
 
 .hamburger-menu {
-	position: absolute;
-	padding-left: 2rem;
-	z-index: 999999;
+  position: absolute;
+  padding-left: 2rem;
+  z-index: 999999;
 }
-
-
-
-
