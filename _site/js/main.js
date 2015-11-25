@@ -5,6 +5,7 @@ var menu = function() {
  	menuContainer: '.menu-container',
  	menuItems: '.js-menu-items h3',
   topBar: '.js-topBar',
+  navIcons: '.top-nav-icons'
   };
   return {
     init: function (configuration) {
@@ -12,7 +13,7 @@ var menu = function() {
       configuration = {};
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
-      menu.menuScroll();
+      menu.menuScrollOverlay();
       // menu.productHover();
       
     },
@@ -43,16 +44,8 @@ var menu = function() {
 		// toggle animation
     	$(defaults.menu).on('click', function(){
 
-          $(this).delay(200).queue(function(){
-            $(this).find('.menu-bar').toggleClass('menu-bar-white');
-            $(this).dequeue();
-          });
-
-          $('.frame').find('.logo').toggleClass('logo-white');
-          $(this).toggleClass('toggled');
-
           tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
-          
+  
     	});
     },
     productHover: function() {
@@ -64,7 +57,24 @@ var menu = function() {
                $(this).find('.product').removeClass('hover');
       	});
     },
-    menuScroll: function() {
+    menuScrollOverlay: function() {
+
+      $(defaults.menu).on('click', function(){
+
+          $(defaults.menuContainer).toggleClass('js-menu-active');
+        
+          $(defaults.navIcons).find('.menu-bar').toggleClass('menu-bar-white');
+
+          $(defaults.navIcons).find('.logo').toggleClass('logo-white');
+
+          $(this).toggleClass('toggled');
+          
+      }); // toggle color change from black to white
+
+      if($(defaults.menuContainer).hasClass('js-menu-active')){
+          $(defaults.topBar).removeClass('topBar-white');      
+        }; // remove the white frame from the top nav.
+
       $(document).scroll(
           function() {
             if($(document).scrollTop() >= 100) {
@@ -73,11 +83,8 @@ var menu = function() {
                $(defaults.topBar).removeClass('topBar-white');
             }
           }
-      );
+      ); // change frame background on scroll
     }   
   };
 }();
 
-// 1. fade in and fade out
-// 2. set the toggle to reverse animation [DONE]
-// 3. create a nice sliding animation for the menu items
