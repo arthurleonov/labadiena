@@ -346,8 +346,14 @@ a {
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .filter-container {
+    padding-left: 1rem; }
+
+  .mobile-filter-container .filters {
+    padding-top: 1rem; }
+
   .product-container {
-    margin-top: 4rem; }
+    margin-top: 0; }
     .product-container .product-items {
       margin-top: 2.5rem;
       position: relative; }

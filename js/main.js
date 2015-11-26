@@ -5,7 +5,9 @@ var menu = function() {
  	menuContainer: '.menu-container',
  	menuItems: '.js-menu-items h3',
   topBar: '.js-topBar',
-  navIcons: '.top-nav-icons'
+  navIcons: '.top-nav-icons',
+  mobileFilterContainer: '.mobile-filter-container',
+  showFilters: '.js-show-filters'
   };
   return {
     init: function (configuration) {
@@ -14,6 +16,7 @@ var menu = function() {
       config = $.extend(true, defaults, configuration);
       menu.openCloseMenu();
       menu.menuScrollOverlay();
+      menu.slideoutAnimation();
       // menu.stopScroll();
       // menu.productHover();
       
@@ -27,27 +30,27 @@ var menu = function() {
 
 
     	// container animation
-		tl.from(defaults.menuContainer, 0.8, {
-		    y: '-500',
-        autoAlpha: 0,
-		    force3D: true,
-		    ease: Expo.easeOut
-		  });
-		  // text animation 
+  		tl.from(defaults.menuContainer, 0.8, {
+  		    y: '-500',
+          autoAlpha: 0,
+  		    force3D: true,
+  		    ease: Expo.easeOut
+  		  });
+  		  // text animation 
 
-		tl.from(defaults.menuItems, 0.4, {
-		  y: '-200',
-		  autoAlpha: 0,
-		  force3D: true,
-		  ease: Expo.easeOut
-		}, '-=0.5');
+  		tl.from(defaults.menuItems, 0.4, {
+  		  y: '-200',
+  		  autoAlpha: 0,
+  		  force3D: true,
+  		  ease: Expo.easeOut
+  		}, '-=0.5');
 
-		// toggle animation
-    	$(defaults.menu).on('click', function(){
+  		// toggle animation
+      	$(defaults.menu).on('click', function(){
 
-          tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
-  
-    	});
+            tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
+    
+      	});
     },
     productHover: function() {
     	$('.js-hover').hover(function(e) {
@@ -85,6 +88,31 @@ var menu = function() {
             }
           }
       ); // change frame background on scroll
+    },
+    slideoutAnimation: function() {
+        var rl = new TimelineMax({
+        paused: true,
+        reversed: true,
+      }); // set new timelinemax
+
+
+      // container animation
+      rl.from(defaults.mobileFilterContainer, 0.7, {
+          y: '-50',
+          autoAlpha: 0,
+          display:'none',
+          force3D: true,
+          ease: Expo.easeOut
+        });
+        // text animation 
+
+      // toggle animation
+        $(defaults.showFilters).on('click', function(){
+
+            rl.reversed() ? rl.play():rl.reverse(); // gsap animation play and reverse
+    
+        });
+
     }   
   };
 }();
