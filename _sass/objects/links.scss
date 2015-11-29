@@ -1,19 +1,8 @@
-a, {
+a {
 	text-decoration: none;
 	color: $color-black;
 	padding-bottom: 3px;
 	transition: color .5s ease;
-	&:hover, &:hover, &.hover {
-		color: $color-lightbrown;
-		text-decoration: none;
-		cursor: pointer; cursor: hand;
-	}
-}
-
-// HOVER STATE EFFECTS //
-
-/* LEFT TO RIGHT */
-.left-to-right {
 	display: inline-block;
 	&:after {
 		content: '';
@@ -23,13 +12,26 @@ a, {
 		background: transparent;
 		transition: width .5s ease, background-color .5s ease;
 	}
-	&:hover {
+	&:hover, &:hover, &.hover {
+		color: $color-lightbrown;
+		text-decoration: none;
+		cursor: pointer; cursor: hand;
 		&:after {
 			width: 100%;
 			background: $color-lightbrown;
 		}
 	}
+	&.img {
+		&:hover {
+			&:after {
+				width: 0;
+			}
+		}
+	}
 }
+
+// HOVER STATE EFFECTS //
+
 
 /* RIGHT TO LEFT */
 
@@ -118,7 +120,7 @@ a, {
 			background: transparent;
 			transition: all 0s ease;
 		}
-}
+	}
 }
 
 

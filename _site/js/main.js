@@ -19,7 +19,7 @@ var menu = function() {
       menu.slideoutAnimation();
       menu.showOnScroll();
       // menu.stopScroll();
-      // menu.productHover();
+      menu.productHover();
       
     },
     openCloseMenu: function() {
@@ -55,12 +55,10 @@ var menu = function() {
     },
     productHover: function() {
     	$('.js-hover').hover(function(e) {
-           $(this).find('.js-item-hover').addClass('hover');
-           $(this).find('.product').addClass('hover');
-            }, function(){
-               $(this).find('.js-item-hover').removeClass('hover');
-               $(this).find('.product').removeClass('hover');
-      	});
+         $(this).find('a').not('.img').addClass('hover');
+          }, function(){
+             $(this).find('a').removeClass('hover');
+      });
     },
     menuScrollOverlay: function() {
 

@@ -528,26 +528,25 @@ a {
   text-decoration: none;
   color: #1b1a1c;
   padding-bottom: 3px;
-  transition: color .5s ease; }
-  a:hover, a:hover, a.hover {
-    color: #bf7546;
-    text-decoration: none;
-    cursor: pointer;
-    cursor: hand; }
-
-/* LEFT TO RIGHT */
-.left-to-right {
+  transition: color .5s ease;
   display: inline-block; }
-  .left-to-right:after {
+  a:after {
     content: '';
     display: block;
     height: 3px;
     width: 0;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  .left-to-right:hover:after {
-    width: 100%;
-    background: #bf7546; }
+  a:hover, a:hover, a.hover {
+    color: #bf7546;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand; }
+    a:hover:after, a:hover:after, a.hover:after {
+      width: 100%;
+      background: #bf7546; }
+  a.img:hover:after {
+    width: 0; }
 
 /* RIGHT TO LEFT */
 .right-to-left {
