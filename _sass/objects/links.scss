@@ -1,0 +1,124 @@
+a, {
+	text-decoration: none;
+	color: $color-black;
+	padding-bottom: 3px;
+	transition: color .5s ease;
+	&:hover, &:hover, &.hover {
+		color: $color-lightbrown;
+		text-decoration: none;
+		cursor: pointer; cursor: hand;
+	}
+}
+
+// HOVER STATE EFFECTS //
+
+/* LEFT TO RIGHT */
+.left-to-right {
+	display: inline-block;
+	&:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			background: $color-lightbrown;
+		}
+	}
+}
+
+/* RIGHT TO LEFT */
+
+.right-to-left {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			background: $color-lightbrown;
+		}
+	}
+}
+
+/* MIDDLE OUT */
+
+.middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	&:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			background: $color-lightbrown;
+		}
+	}
+}
+
+
+/* SLIDE IN, SLIDE OFF */
+
+.slide-in-off {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 0;
+		transition: width 0s ease, background .5s ease;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 3px;
+		width: 0;
+		background: $color-lightbrown;
+		transition: width .5s ease;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			background: $color-lightbrown;
+			transition: width .5s ease;
+		}
+		&:after {
+			width: 100%;
+			background: transparent;
+			transition: all 0s ease;
+		}
+}
+}
+
+

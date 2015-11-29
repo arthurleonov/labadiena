@@ -63,29 +63,3 @@ p, label {
 	font-size: $font-xxxxxl;
 }
 
-
-a, {
-  	text-decoration: none;
-  	color: $color-black;
-	padding-bottom: 3px;
-	&:after {
-		content: '';
-		display: block;
-		margin: auto;
-		height: 3px;
-		width: 0px;
-		background: transparent;
-		transition: width .5s ease, background-color .5s ease;
-	}
-	transition: color .5s ease;
-	&:hover, &:hover span, &.hover {
-		color: $color-lightbrown;
-		text-decoration: none;
-		cursor: pointer; cursor: hand;
-		&:after {
-			width: 100%;
-			background: $color-lightbrown;
-			text-underline: none;
-		}
-	}
-}
