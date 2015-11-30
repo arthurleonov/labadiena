@@ -1,0 +1,47 @@
+footer {
+	background-color: $color-black;
+	margin-top: 5rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	p, p a {
+			font-size: 0.8rem;
+	}
+	.right {
+		.logo {
+			vertical-align: middle;
+		}
+		.fa {
+			font-size: 1.9rem;
+			color: $color-white;
+			display: inline-block;
+			transition: color .3s ease;
+			&:hover {
+				color: $color-lightbrown;
+			}
+		}
+	}
+	.middle {
+		a {
+			font-size: 0.8rem;
+			display: block;
+
+		}
+	}
+
+	.left {
+		h2 {
+			margin: 0;
+
+		}
+		hr {
+			border-top: 1px solid $color-grey;
+    		margin-right: 7rem;
+    		margin-top: 1rem;
+		}
+	}
+	.copyright {
+			padding-top: 0.5rem;
+			display: block;
+			font-weight: bold;
+		}
+}

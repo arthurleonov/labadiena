@@ -14,6 +14,10 @@ p, label {
 	color: $color-white;
 }
 
+.grey {
+  color: $color-grey;
+}
+
 .font-xs {
   font-size: $font-xs;
 }
@@ -61,5 +65,14 @@ p, label {
 
 .font-xxxxxl {
 	font-size: $font-xxxxxl;
+}
+
+hr {
+  &.width-50 {
+    width: 50%;
+  }
+  &.width-20 {
+    width: 20%;
+  }
 }
 
