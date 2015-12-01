@@ -12,7 +12,7 @@ footer {
 		}
 		.fa {
 			font-size: 1.9rem;
-			color: $color-white;
+			color: $color-grey;
 			display: inline-block;
 			transition: color .3s ease;
 			&:hover {
@@ -23,8 +23,6 @@ footer {
 	.middle {
 		a {
 			font-size: 0.8rem;
-			display: block;
-
 		}
 	}
 

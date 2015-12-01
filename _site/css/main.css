@@ -169,8 +169,7 @@ hr.width-20 {
     text-align: center;
     line-height: 3rem; }
     .homepage-content .content-title a, .homepage-content .content-title span {
-      font-family: "Georgia", serif;
-      font-size: 0.9rem; }
+      font-family: "Georgia", serif; }
     .homepage-content .content-title a {
       font-size: 3rem; }
     .homepage-content .content-title span {
@@ -637,14 +636,13 @@ footer {
     vertical-align: middle; }
   footer .right .fa {
     font-size: 1.9rem;
-    color: #ffffff;
+    color: #5e5e5f;
     display: inline-block;
     transition: color .3s ease; }
     footer .right .fa:hover {
       color: #bf7546; }
   footer .middle a {
-    font-size: 0.8rem;
-    display: block; }
+    font-size: 0.8rem; }
   footer .left h2 {
     margin: 0; }
   footer .left hr {
