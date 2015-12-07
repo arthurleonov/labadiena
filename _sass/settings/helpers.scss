@@ -2,6 +2,7 @@ $grid-columns: 12;
 $sm-width: 768px;
 $xm-width: 992px;
 $xl-width: 1200px;
+$prefix: m;
 
 @mixin helper($property: margin, $size: 0, $size_naming: 0, $direction: all, $naming_direction: null) {
   @if $property == margin {
@@ -9,11 +10,6 @@ $xl-width: 1200px;
   } @else if $property == padding {
     $prefix: p;
   }
-  @if $direction == all {
-    $class: $prefix + '-' + $size_naming;
-    .#{$class} {
-      #{$property}: $size !important;
-    }
     @media (max-width: $sm-width - 1px) {
       $class: $prefix + '-xs-' + $size_naming;
       .#{$class} {
@@ -42,87 +38,9 @@ $xl-width: 1200px;
     @include helper($property, $size, $size_naming, r, right);
     @include helper($property, $size, $size_naming, l, left);
     @include helper($property, $size, $size_naming, b, bottom);
-  } @else {
-    $class: $prefix+'-' + $size_naming + '-' + $direction;
-    $temp_property: $property + '-' + $naming_direction;
-    .#{$class} {
-      #{$temp_property}: $size !important;
-    }
-    @media (max-width: $sm-width - 1px) {
-      $class: $prefix + '-xs-' + $size_naming + '-' + $direction;
-      .#{$class} {
-        #{$temp_property}: $size !important;
-      }
-    }
-    @media (min-width: $sm-width) and (max-width: $xm-width - 1px) {
-      $class: $prefix + '-sm-' + $size_naming + '-' + $direction;
-      .#{$class} {
-        #{$temp_property}: $size !important;
-      }
-    }
-    @media (min-width: $xm-width) and (max-width: $xl-width - 1px) {
-      $class: $prefix + '-xm-' + $size_naming + '-' + $direction;
-      .#{$class} {
-        #{$temp_property}: $size !important;
-      }
-    }
-    @media (min-width: $xl-width - 1px) {
-      $class: $prefix + '-xl-' + $size_naming + '-' + $direction;
-      .#{$class} {
-        #{$temp_property}: $size !important;
-      }
-    }
-  }
+  
 }
 
-
-@mixin bottomShadowDefault() {
-  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: "");
-}
-
-.insetShadowDefault {
-  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: inset);
-}
-
-.shadowDefaultBottom {
-  @include box-shadow($x: 0px, $y: 2px, $blur: 7px, $color: $color-lightgrey);
-}
-
-.shadowDefault {
-  @include box-shadow($x: 0px, $y: 0px, $blur: 20px, $color: rgba(0, 0, 0, .4), $inset: "");
-}
-
-.center-middle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center; /* Align center inline elements */
-  font-size: 0;
-  line-height: 0;
-  &:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-  }
-  & > * {
-    max-width: 100%;
-    max-height: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 1;
-    font-size: $font-size-default;
-    position: relative;
-  }
-}
-
-.ignore-columns{
-  [class*="col-"]{
-        width: auto;
-      }
-}
 
 @include helper(margin);
 @include helper(margin, 0rem, '0rem');
