@@ -17,7 +17,7 @@ var menu = function() {
       menu.openCloseMenu();
       menu.menuScrollOverlay();
       menu.slideoutAnimation();
-      menu.showOnScroll();
+      // menu.showOnScroll();
       // menu.stopScroll();
       menu.productHover();
       
@@ -50,7 +50,7 @@ var menu = function() {
       	$(defaults.menu).on('click', function(){
 
             tl.reversed() ? tl.play():tl.reverse(); // gsap animation play and reverse
-    
+        //
       	});
     },
     productHover: function() {
@@ -118,9 +118,10 @@ var menu = function() {
         
             /* Check the location of each desired element */
             $('.hideme').each( function(i){
-                
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                //gets the top property of the object - the height of the object
+                var bottom_of_object = $(this).offset().top - $(this).outerHeight();
+                console.log(bottom_of_object);
+                var bottom_of_window = $(window).scrollTop() - $(window).height();
                 
                 /* If the object is completely visible in the window, fade it it */
                 if( bottom_of_window > bottom_of_object ){
