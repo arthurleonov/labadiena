@@ -35,11 +35,11 @@ var dropdown = function() {
             element.subMenuAnimation = tl;
 
             $(element).one('click', function(){
-              menuItemOver();
+                menuItemOver();
             });
 
           } // end of if
-      });
+      });// end of each
 
       function menuItemOver()
       {

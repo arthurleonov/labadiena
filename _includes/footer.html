@@ -51,10 +51,19 @@
 
     <script src="{{site.baseurl}}/js/dropdown.js"></script>
 
+    <script src="{{site.baseurl}}/js/lightslider.js"></script>
+
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
+              $('#lightSlider').lightSlider({
+                    gallery: true,
+                    item: 1,
+                    loop:true,
+                    slideMargin: 0,
+                    thumbItem: 4
+                });
         });
 
     </script>

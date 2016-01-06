@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="/labadiena/css/bootstrap.min.css">
    <link rel="stylesheet" href="/labadienacss/bootstrap-theme.min.css">
    <link rel="stylesheet" href="/labadiena/css/animate.css">
+   <link rel="stylesheet" href="/labadiena/css/lightslider.css">
    <link rel="stylesheet" href="/labadiena/css/main.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -340,10 +341,19 @@
 
     <script src="/labadiena/js/dropdown.js"></script>
 
+    <script src="/labadiena/js/lightslider.js"></script>
+
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
+              $('#lightSlider').lightSlider({
+                    gallery: true,
+                    item: 1,
+                    loop:true,
+                    slideMargin: 0,
+                    thumbItem: 4
+                });
         });
 
     </script>
