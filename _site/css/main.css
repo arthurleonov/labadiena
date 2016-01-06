@@ -866,32 +866,27 @@ a {
   .filter-container h3 {
     font-size: 1.3rem; } }
 /* Large desktop */
-.product-selection .main-img {
-  max-height: 80rem;
-  overflow: hidden; }
-
 .product-selection {
   margin-top: 7rem;
   margin-bottom: 7rem; }
-  .product-selection .left-container {
-    max-height: 43rem; }
-  .product-selection .right-container .img-1 {
-    padding-right: 0; }
-  .product-selection .right-container .img-2 {
+  .product-selection .main-img {
+    max-height: 80rem;
+    overflow: hidden; }
+  .product-selection .fs-container {
     padding-left: 0; }
-  .product-selection .fs-container p {
-    margin-bottom: 5rem; }
-  .product-selection .fs-container .boxes {
-    margin-top: 3rem; }
-    .product-selection .fs-container .boxes a span {
-      border: 1px solid #1b1a1c;
-      display: inline-block;
-      text-align: center;
-      padding: 1rem 1rem;
-      transition: background-color 0.4s; }
-      .product-selection .fs-container .boxes a span:hover {
-        background-color: #1b1a1c;
-        color: #ffffff; }
+    .product-selection .fs-container p {
+      margin-bottom: 5rem; }
+    .product-selection .fs-container .boxes {
+      margin-top: 3rem; }
+      .product-selection .fs-container .boxes a span {
+        border: 1px solid #1b1a1c;
+        display: inline-block;
+        text-align: center;
+        padding: 1rem 1rem;
+        transition: background-color 0.4s; }
+        .product-selection .fs-container .boxes a span:hover {
+          background-color: #1b1a1c;
+          color: #ffffff; }
 
 @media only screen and (min-width: 768px) {
   .no-padding-lg {

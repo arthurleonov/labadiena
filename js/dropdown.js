@@ -1,4 +1,3 @@
-
 var dropdown = function() {
   var defaults = {
     submenus : '.dropdown-menu-custom',
@@ -34,31 +33,28 @@ var dropdown = function() {
       
             element.subMenuAnimation = tl;
 
-            $(element).one('click', function(){
-                menuItemOver();
-            });
-
+            $(element).one("click", menuItemOver);
+          
           } // end of if
-      });// end of each
+      });
 
       function menuItemOver()
       {
         this.subMenuAnimation.play();
-        $(defaults.customDropdown).one("click", menuItemOut);
+        $(this).one("click", menuItemOut);
+    
       }
 
       function menuItemOut()
       {
         this.subMenuAnimation.reverse();
-        $(defaults.customDropdown).one("click", menuItemOver);
+        $(this).one("click", menuItemOver);
       }
     },
     updateValue: function(){
       $(defaults.dropdownLink).click(function () {
           $(this).parents(defaults.customDropdown).find(defaults.button).text($(this).text());
-           $(this).parents(defaults.customDropdown).find(defaults.button).val($(this).text());
-          // $(this).parents(".input-group-btn").find('.selection').text($(this).text());
-          // $(this).parents(".input-group-btn").find('.selection').val($(this).text());
+          $(this).parents(defaults.customDropdown).find(defaults.button).val($(this).text());
       });
     }
   };
@@ -70,5 +66,3 @@ var dropdown = function() {
 // 2. if you click on the object or away the animation reverses itself and goes away DONE
 // 3. it only works on this element not every element
 // 4. when I click on the dropdown, the parent container updates the value
-
-
