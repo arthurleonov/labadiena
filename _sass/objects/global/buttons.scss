@@ -1,20 +1,39 @@
 .btn {
 	&.default {
-		border: 2px solid $color-black;
+		border: 1px solid $color-black;
 		background-color: inherit;
 		color: $color-black;
-		margin-top: 2rem;
 		padding: 0.5rem;
-		border-radius: 6px;
+		border-radius: 3px;
 		min-width: 10rem;
-		// font-weight: bold;
+		background-color: inherit;
+    	border-radius: 4px;
+    	outline: none;
 		transition: all .2s ease;
 		&:hover {
-			background-color: $color-black;
+			background-color: $color-lightbrown;
 			color: $color-white;
+			border: 1px solid $color-lightbrown;
 		}
 	}
-	&.width-100 {
-		width: 100%;
-	}
+	&.padding-1 {
+      padding: 1rem;
+    }
+    &.padding-05 {
+      padding: 0.5rem;
+    }
+    &.border-black {
+      border: 1px solid $color-black;
+    }
+    &.fill {
+    	background-color: $color-black;
+    	color: $color-white;
+    }
+    &.width-100 {
+      min-width: 100%;
+    }
+    &.active {
+      background-color: $color-lightbrown;
+      color: $color-white;
+    }
 }
