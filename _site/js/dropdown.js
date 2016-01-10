@@ -3,7 +3,7 @@ var dropdown = function() {
     submenus : '.dropdown-menu-custom',
     customDropdown: '.custom-dropdown',
     dropdownLink: '.dropdown-menu-custom li',
-    button: '.select-button'
+    button: '.btn'
   };
   return {
     init: function (configuration) {
@@ -16,52 +16,51 @@ var dropdown = function() {
     },
     showHideDropdown: function() {
 
-    
-      $.each($(defaults.customDropdown), function(index, element) {
+        $.each($(defaults.customDropdown), function(index, element)
+        {
 
-        var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
-    
-        if(subMenu.length !== 0) {
-          tl = new TimelineLite({
-            paused:true
-          });
+            var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
 
-          tl.from(subMenu, .2, {
-              autoAlpha: 0,
-              y: '-10',
-          });
-        }
-      
-        element.subMenuAnimation = tl;
+            if(subMenu.length !== 0)
+            {
+                tl = new TimelineLite({
+                    paused: true
+                });
 
-          $(defaults.customDropdown).on("click", function(){
+                tl.from(subMenu, .2, {
+                    autoAlpha: 0,
+                    y: '-10',
+                });
+            }
 
-            if($(defaults.customDropdown).hasClass('active')) {
+            element.subMenuAnimation = tl;
 
-              $(element).removeClass('active');
-              element.subMenuAnimation.reverse();
+            $(element).on('click', function() {
 
-            } else {
+                var isActive = $(element).hasClass('active');
 
-              $(this).addClass('active');
-              this.subMenuAnimation.play();
+                // Close other dropdowns
+                $(defaults.customDropdown).filter('.active').each(function()
+                {
+                    var $element = $(this);
+                    $element.removeClass('active');
+                    $element.get(0).subMenuAnimation.reverse();
+                });
 
-            }  
-          });
+                // Current dropdown: close if active, open if not
+                if(isActive)
+                {
+                    $(element).removeClass('active');
+                    element.subMenuAnimation.reverse();
+                }
+                else
+                {
+                    $(element).addClass('active');
+                    element.subMenuAnimation.play();
+                }
+            });
 
-      });
-
-      // function menuItemOver()
-      // {
-      //   this.subMenuAnimation.play();
-      //   $(this).one("click", menuItemOut);
-      // }
-
-      // function menuItemOut()
-      // {
-      //   this.subMenuAnimation.reverse();
-      //   $(this).one("click", menuItemOver);
-      // }
+        });
     },
     updateValue: function(){
       $(defaults.dropdownLink).click(function () {
@@ -71,10 +70,3 @@ var dropdown = function() {
     }
   };
 }();
-
-
-// 1. Custon dropdown that slides out with a nice animation on click DONE
-//    1.1 animation preferably tweenmax DONE
-// 2. if you click on the object or away the animation reverses itself and goes away DONE
-// 3. it only works on this element not every element
-// 4. when I click on the dropdown, the parent container updates the value
