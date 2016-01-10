@@ -14,42 +14,54 @@ var dropdown = function() {
       dropdown.showHideDropdown();
       dropdown.updateValue();
     },
-    showHideDropdown: function() {
+    showHideDropdown: function()
+    {
 
-    
-      $.each($(defaults.customDropdown), function(index, element) {
+        $.each($(defaults.customDropdown), function(index, element)
+        {
 
-        var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
-    
-        if(subMenu.length !== 0) {
-          tl = new TimelineLite({
-            paused:true
-          });
+            var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
 
-          tl.from(subMenu, .2, {
-              autoAlpha: 0,
-              y: '-10',
-          });
-        }
-      
-        element.subMenuAnimation = tl;
+            if(subMenu.length !== 0)
+            {
+                tl = new TimelineLite({
+                    paused: true
+                });
 
-          $(defaults.customDropdown).on("click", function(){
+                tl.from(subMenu, .2, {
+                    autoAlpha: 0,
+                    y:         '-10',
+                });
+            }
 
-            if($(defaults.customDropdown).hasClass('active')) {
+            element.subMenuAnimation = tl;
 
-              $(element).removeClass('active');
-              element.subMenuAnimation.reverse();
+            $(element).on('click', function()
+            {
+                var isActive = $(element).hasClass('active');
 
-            } else {
+                // Close other dropdowns
+                $(defaults.customDropdown).filter('.active').each(function()
+                {
+                    var $element = $(this);
+                    $element.removeClass('active');
+                    $element.get(0).subMenuAnimation.reverse();
+                });
 
-              $(this).addClass('active');
-              this.subMenuAnimation.play();
+                // Current dropdown: close if active, open if not
+                if(isActive)
+                {
+                    $(element).removeClass('active');
+                    element.subMenuAnimation.reverse();
+                }
+                else
+                {
+                    $(element).addClass('active');
+                    element.subMenuAnimation.play();
+                }
+            });
 
-            }  
-          });
-
-      });
+        });
 
       // function menuItemOver()
       // {
