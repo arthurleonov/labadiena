@@ -16,40 +16,52 @@ var dropdown = function() {
     },
     showHideDropdown: function() {
 
+    
       $.each($(defaults.customDropdown), function(index, element) {
 
-          var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
+        var subMenu = $(element).find('ul'), tl; // important. make sure the unlisted list items are present. This targets its
     
-          if(subMenu.length != 0) {
+        if(subMenu.length !== 0) {
+          tl = new TimelineLite({
+            paused:true
+          });
 
-            tl = new TimelineLite({
-              paused:true
-            });
-
-            tl.from(subMenu, .2, {
-                autoAlpha: 0,
-                y: '-10',
-            });
+          tl.from(subMenu, .2, {
+              autoAlpha: 0,
+              y: '-10',
+          });
+        }
       
-            element.subMenuAnimation = tl;
+        element.subMenuAnimation = tl;
 
-            $(element).one("click", menuItemOver);
-          
-          } // end of if
+          $(defaults.customDropdown).on("click", function(){
+
+            if($(defaults.customDropdown).hasClass('active')) {
+
+              $(element).removeClass('active');
+              element.subMenuAnimation.reverse();
+
+            } else {
+
+              $(this).addClass('active');
+              this.subMenuAnimation.play();
+
+            }  
+          });
+
       });
 
-      function menuItemOver()
-      {
-        this.subMenuAnimation.play();
-        $(this).one("click", menuItemOut);
-    
-      }
+      // function menuItemOver()
+      // {
+      //   this.subMenuAnimation.play();
+      //   $(this).one("click", menuItemOut);
+      // }
 
-      function menuItemOut()
-      {
-        this.subMenuAnimation.reverse();
-        $(this).one("click", menuItemOver);
-      }
+      // function menuItemOut()
+      // {
+      //   this.subMenuAnimation.reverse();
+      //   $(this).one("click", menuItemOver);
+      // }
     },
     updateValue: function(){
       $(defaults.dropdownLink).click(function () {
