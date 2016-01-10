@@ -34,7 +34,7 @@ var dropdown = function() {
       
         element.subMenuAnimation = tl;
 
-          $(defaults.customDropdown).on("click", function(){
+          $(element).on("click", function(){
 
             if($(defaults.customDropdown).hasClass('active')) {
 
@@ -42,10 +42,8 @@ var dropdown = function() {
               element.subMenuAnimation.reverse();
 
             } else {
-
               $(this).addClass('active');
               this.subMenuAnimation.play();
-
             }  
           });
 
