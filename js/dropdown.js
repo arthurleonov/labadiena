@@ -63,7 +63,7 @@ var dropdown = function() {
     },
     updateValue: function(){
       $(defaults.dropdownLink).click(function () {
-          $(this).parents(defaults.customDropdown).find(defaults.button).text($(this).text());
+          $(this).parents(defaults.customDropdown).find(defaults.button).text($(this).text()).append('<span class="caret"></span>');
           $(this).parents(defaults.customDropdown).find(defaults.button).val($(this).text());
       });
     }
