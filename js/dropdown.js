@@ -40,8 +40,7 @@ var dropdown = function() {
                 var isActive = $(element).hasClass('active');
 
                 // Close other dropdowns
-                $(defaults.customDropdown).filter('.active').each(function()
-                {
+                $(defaults.customDropdown).filter('.active').each(function() {
                     var $element = $(this);
                     $element.removeClass('active');
                     $element.get(0).subMenuAnimation.reverse();

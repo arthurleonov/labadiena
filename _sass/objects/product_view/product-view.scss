@@ -7,12 +7,29 @@
     }
     .right-container {
         background-color: $color-white;
-        height: 438px;
         .right-inner-container {
-            padding-left: 0; 
+            padding-left: 0;
+            h2 {
+                margin-top: 2rem;
+            } 
             p {
                 margin: 2rem 0rem;
             }
+            h3 {
+                margin-top: 0.5rem;
+            }
+        .faq {
+            .q:last-of-type {
+                padding-bottom: 1rem;
+            }
+            .caret {
+                display: inline-block;
+                margin-top: 0.3rem;
+                border-top: 6px solid;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent;
+            }
+        }
         } 
     }
 }

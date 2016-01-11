@@ -68,6 +68,10 @@ p, label {
 }
 
 hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.10);
   &.width-50 {
     width: 50%;
   }
