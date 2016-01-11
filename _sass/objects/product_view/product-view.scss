@@ -19,6 +19,13 @@
                 margin-top: 0.5rem;
             }
         .faq {
+            .q {
+                p {
+                    display: none;
+                    font-size: 0.8rem;
+                    margin: 0.5rem 0;;
+                }
+            }
             .q:last-of-type {
                 padding-bottom: 1rem;
             }
