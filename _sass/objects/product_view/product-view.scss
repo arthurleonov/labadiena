@@ -20,9 +20,15 @@
             }
         .faq {
             .q {
+                h5 {
+                    font-size: 1rem;
+                    a {
+                        padding-bottom: 0;
+                    }
+                }
                 p {
                     display: none;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     margin: 0.5rem 0;;
                 }
             }

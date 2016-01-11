@@ -892,9 +892,13 @@ a {
         margin: 2rem 0rem; }
       .product-selection .right-container .right-inner-container h3 {
         margin-top: 0.5rem; }
+      .product-selection .right-container .right-inner-container .faq .q h5 {
+        font-size: 1rem; }
+        .product-selection .right-container .right-inner-container .faq .q h5 a {
+          padding-bottom: 0; }
       .product-selection .right-container .right-inner-container .faq .q p {
         display: none;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0.5rem 0; }
       .product-selection .right-container .right-inner-container .faq .q:last-of-type {
         padding-bottom: 1rem; }

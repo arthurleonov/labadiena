@@ -1,7 +1,7 @@
 var product = function() {
   var defaults = {
     faqQuestion : '.js-q',
-    faqContent : '.js-test'
+    faqContent : '.js-a'
   };
   return {
     init: function (configuration) {
@@ -12,7 +12,7 @@ var product = function() {
     },
     toggleFaq: function(){
       $(defaults.faqQuestion).on('click', function(){
-          $(defaults.faqContent).slideToggle();
+          $(this).find(defaults.faqContent).slideToggle();
       });
     }
   };
