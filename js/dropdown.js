@@ -40,8 +40,7 @@ var dropdown = function() {
                 var isActive = $(element).hasClass('active');
 
                 // Close other dropdowns
-                $(defaults.customDropdown).filter('.active').each(function()
-                {
+                $(defaults.customDropdown).filter('.active').each(function() {
                     var $element = $(this);
                     $element.removeClass('active');
                     $element.get(0).subMenuAnimation.reverse();
@@ -64,7 +63,7 @@ var dropdown = function() {
     },
     updateValue: function(){
       $(defaults.dropdownLink).click(function () {
-          $(this).parents(defaults.customDropdown).find(defaults.button).text($(this).text());
+          $(this).parents(defaults.customDropdown).find(defaults.button).text($(this).text()).append('<span class="caret"></span>');
           $(this).parents(defaults.customDropdown).find(defaults.button).val($(this).text());
       });
     }
