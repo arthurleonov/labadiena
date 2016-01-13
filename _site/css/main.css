@@ -908,12 +908,63 @@ a {
         border-top: 6px solid;
         border-right: 6px solid transparent;
         border-left: 6px solid transparent; }
+        .product-selection .right-container .right-inner-container .faq .caret.active {
+          animation: active-animation linear 0.7s;
+          animation-iteration-count: infinite;
+          transform-origin: 50% 50%;
+          animation-fill-mode: forwards;
+          /*when the spec is finished*/
+          -webkit-animation: active-animation linear 0.7s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-transform-origin: 50% 50%;
+          -webkit-animation-fill-mode: forwards;
+          /*Chrome 16+, Safari 4+*/
+          -moz-animation: active-animation linear 0.7s;
+          -moz-animation-iteration-count: infinite;
+          -moz-transform-origin: 50% 50%;
+          -moz-animation-fill-mode: forwards;
+          /*FF 5+*/
+          -o-animation: active-animation linear 0.7s;
+          -o-animation-iteration-count: infinite;
+          -o-transform-origin: 50% 50%;
+          -o-animation-fill-mode: forwards;
+          /*Not implemented yet*/
+          -ms-animation: active-animation linear 0.7s;
+          -ms-animation-iteration-count: infinite;
+          -ms-transform-origin: 50% 50%;
+          -ms-animation-fill-mode: forwards;
+          /*IE 10+*/ }
 
 .lSGallery li.active:hover {
   border-radius: none; }
 .lSGallery li.active a img {
   border: 2px solid #bf7546; }
 
+@keyframes active-animation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+@-moz-keyframes active-animation {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(180deg); } }
+@-webkit-keyframes active-animation {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg); } }
+@-o-keyframes active-animation {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(180deg); } }
+@-ms-keyframes active-animation {
+  0% {
+    -ms-transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(180deg); } }
 @media only screen and (min-width: 768px) {
   .no-padding-lg {
     padding-left: 0;

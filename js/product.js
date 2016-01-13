@@ -1,7 +1,8 @@
 var product = function() {
   var defaults = {
     faqQuestion : '.js-q',
-    faqContent : '.js-a'
+    faqContent : '.js-a',
+    faqCaret : '.js-caret'
   };
   return {
     init: function (configuration) {
@@ -13,6 +14,7 @@ var product = function() {
     toggleFaq: function(){
       $(defaults.faqQuestion).on('click', function(){
           $(this).find(defaults.faqContent).slideToggle();
+          $(this).find(defaults.faqCaret).toggleClass('active');
       });
     }
   };
