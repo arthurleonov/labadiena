@@ -97,24 +97,26 @@
     </div>
     <div class="col-sm-9 col-xs-12 product-container">
       <div class="row">
+        {% for product in site.posts%}
         <div class="col-sm-6 1st-column js-hover">
           <div class="product-items js-hover">
             <h4 class="visible-xs hidden-sm">
                 <a href="#">
-                  Mist Hooded Sweatshirt
+                  {{product.title}}
                 </a>
             </h4>
             <a href="#" class="img">
-               <img class="img-responsive" src="{{site.baseurl}}/img/photo15.jpg">
+               <img class="img-responsive" src="{{product.thumbimage}}">
             </a>
             <h4 class="hidden-xs">
               <a href="#">
-                Mist Hooded<br/>Sweatshirt
+                {{product.title2}}
               </a>
             </h4>
           </div>
         </div>
-        <div class="col-sm-6 2nd-column js-hover">
+        {% endfor %}
+        <!-- <div class="col-sm-6 2nd-column js-hover">
           <div class="product-items js-hover">
             <h4 class="visible-xs hidden-sm">
               <a href="#">
@@ -132,9 +134,9 @@
               </a>
             </h4>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="row">
+    <!--   <div class="row">
         <div class="col-sm-6 1st-column js-hover">
           <div class="product-items js-hover">
             <h4 class="visible-xs hidden-sm">
@@ -209,7 +211,7 @@
             </h4>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>

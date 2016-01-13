@@ -13,7 +13,7 @@ var product = function() {
     },
     toggleFaq: function(){
       $(defaults.faqQuestion).on('click', function(){
-          $(this).find(defaults.faqContent).slideToggle();
+          $(this).find(defaults.faqContent).slideToggle('fast');
           $(this).find(defaults.faqCaret).toggleClass('active');
       });
     }
