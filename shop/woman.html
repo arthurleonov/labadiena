@@ -1,0 +1,33 @@
+---
+layout: homepage
+---
+<section class="container-fluid animated fadeInUpBig">
+      {% include shop/filter_mobile.html %}
+  <div class="row">
+      {% include shop/filter_desktop.html %}
+    <div class="col-sm-9 col-xs-12 product-container">
+      <div class="row">
+        {% for product in site.categories.woman %}
+          <div class="col-sm-6 1st-column js-hover">
+            <div class="product-items js-hover">
+              <h4 class="visible-xs hidden-sm">
+                  <a href="#">
+                    {{product.title}}
+                  </a>
+              </h4>
+              <a href="#" class="img">
+                 <img class="img-responsive" src="{{product.thumbimage}}">
+              </a>
+              <h4 class="hidden-xs">
+                <a href="#">
+                  {{product.title2}}
+                </a>
+              </h4>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
