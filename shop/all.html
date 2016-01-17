@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 ---
 
 <section class="container-fluid animated fadeInUpBig">
@@ -8,24 +8,26 @@ layout: homepage
       {% include shop/filter_desktop.html %}
     <div class="col-sm-9 col-xs-12 product-container">
       <div class="row">
-        {% for product in site.categories.new %}
-          <div class="col-sm-6 1st-column js-hover">
-            <div class="product-items js-hover">
-              <h4 class="visible-xs hidden-sm">
-                  <a href="#">
-                    {{product.title}}
-                  </a>
-              </h4>
-              <a href="#" class="img">
-                 <img class="img-responsive" src="{{product.thumbimage}}">
-              </a>
-              <h4 class="hidden-xs">
-                <a href="#">
-                  {{product.title2}}
+        {% for post in site.posts %}
+          {% if post.filter contains 'new' %}
+            <div class="col-sm-6 1st-column js-hover">
+              <div class="product-items js-hover">
+                <h4 class="visible-xs hidden-sm">
+                    <a href="{{site.baseurl}}{{post.url}}">
+                      {{post.title}} 
+                    </a>
+                </h4>
+                <a href="{{site.baseurl}}{{post.url}}" class="img">
+                   <img class="img-responsive" src="{{post.image1}}">
                 </a>
-              </h4>
+                <h4 class="hidden-xs">
+                  <a href="{{site.baseurl}}{{post.url}}">
+                    {{post.title2}}
+                  </a>
+                </h4>
+              </div>
             </div>
-          </div>
+          {% endif %} 
         {% endfor %}
       </div>
     </div>

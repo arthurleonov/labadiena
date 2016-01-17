@@ -3,12 +3,9 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-ruby-sass'),
     imagemin = require('gulp-imagemin'),
-    autoprefixer = require('gulp-autoprefixer');
-
-function errorLog(error) {
-  console.error.bind(error);
-  this.emit('end');
-}
+    autoprefixer = require('gulp-autoprefixer'),
+    notify = require("gulp-notify"),
+    gutil = require('gulp-util');
 
 gulp.task('default', ['scripts', 'sass', 'watch']);
 
@@ -17,18 +14,23 @@ gulp.task('scripts', function(){
   return gulp.src('js/*.js')
   .pipe(concat('all.min.js'))
   .pipe(uglify())
-  .on('error', errorLog)
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('dist'))
+  .pipe(notify('Spiral - JS uglified'))
+  .on('error', gutil.log);
 });
 
 // Sass
 
 gulp.task('sass', function () {
-  return sass('_sass/main.scss')
-    .on('error', errorLog)
+  return sass('_sass/main.scss', {
+      style: 'expanded'
+    })
+    .on('error', sass.logError)
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(concat('main.css'))
     .pipe(gulp.dest('dist'))
+    .pipe(notify('CSS compiled, prefixed, and minified.'))
+    .on('error', gutil.log);
 });
 
 
@@ -44,7 +46,7 @@ gulp.task('compress', function () {
 //watch
 
 gulp.task('watch',function(){
-  gulp.watch('src/js/*.js', ['scripts']);
-  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('js/*.js', ['scripts']);
+  gulp.watch('_sass/**/*.scss', ['sass']);
 });
 

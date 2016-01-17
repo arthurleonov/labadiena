@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+
+<div class="product-selection container m-3rem-t">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1 no-padding-lg">
+      <ul id="lightSlider">
+        <li data-thumb="{{page.image1}}">
+          <img class="img-responsive" src="{{page.image1}}" />
+        </li>
+        <li data-thumb="{{page.image2}}">
+          <img class="img-responsive" src="{{page.image2}}" />
+        </li>
+        <li data-thumb="{{page.image3}}">
+          <img class="img-responsive" src="{{page.image3}}" />
+        </li>
+        <li data-thumb="{{page.image4}}">
+          <img  src="{{page.image5}}" />
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 right-container">
+      <div class="right-inner-container">
+        <h2>
+          {{page.title}}
+        </h2>
+        <h4>
+         {{page.price}}
+       </h4>
+       <p>
+        {{page.description}}
+      </p>
+      <hr/>
+
+      <div class="row">
+        <div class="col-md-6">
+          {% include sizes.html %}
+        </div>
+        <div class="col-md-6">
+          <button class="btn default fill padding-05 width-100">
+            Add to Bag
+          </button>
+        </div>
+      </div>
+      <hr/>
+      {% include product_faq.html %}
+    </div>    
+  </div>  
+</div>
+</div>
