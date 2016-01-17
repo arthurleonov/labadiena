@@ -200,7 +200,7 @@
            color: rgba(255, 255, 255, 0.5);
            transition: color 0.4s;
            position: relative;  
-           &:hover {
+           &:hover, &.hover {
             color: rgba(255, 255, 255, 1);
             text-decoration: none;
           }

@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Still Hat"
+title2:  "Still<br/>Hat"
+price: "50"
+description: "asdkajsdlkajsdlkajsdlas"
+image1: "/labadiena/img/still-hat-1.jpg"
+image2: "/labadiena/img/still-hat-2.jpg"
+image3:  "/labadiena/img/still-hat-3.jpg"
+image4:  "/labadiena/img/still-hat-4.jpg"
+categories: man cap stillhat
+---

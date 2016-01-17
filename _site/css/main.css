@@ -473,7 +473,7 @@ hr {
           color: rgba(255, 255, 255, 0.5);
           transition: color 0.4s;
           position: relative; }
-          .menu-container .table-align .table-vertical-align h3 a:hover {
+          .menu-container .table-align .table-vertical-align h3 a:hover, .menu-container .table-align .table-vertical-align h3 a.hover {
             color: white;
             text-decoration: none; }
 

@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Reed Hat"
+title2:  "Reed<br/>Hat"
+price: "50"
+description: "asdkajsdlkajsdlkajsdlas"
+image1: "/labadiena/img/reed-hat-1.jpg"
+image2: "/labadiena/img/reed-hat-2.jpg"
+image3:  "/labadiena/img/reed-hat-3.jpg"
+categories: man cap reedhat
+---

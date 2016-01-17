@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Frost Cap"
+title2:  "Frost Cap"
+price: "50"
+description: "asdkajsdlkajsdlkajsdlas"
+image1: "/labadiena/img/frost-cap-1.jpg"
+image2: "/labadiena/img/frost-cap-2.jpg"
+image3: "/labadiena/img/frost-cap-3.jpg"
+image4: "/labadiena/img/frost-cap-4.jpg"
+categories: man cap frostcap
+---
