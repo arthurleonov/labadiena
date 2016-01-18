@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title:  "Frost Cap"
 title2:  "Frost Cap"
 price: "50"
