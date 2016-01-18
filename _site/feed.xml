@@ -6,12 +6,23 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2016 19:23:20 +0000</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2016 19:23:20 +0000</lastBuildDate>
+    <pubDate>Mon, 18 Jan 2016 20:44:53 +0000</pubDate>
+    <lastBuildDate>Mon, 18 Jan 2016 20:44:53 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Vapor Woman</title>
+        <title>à Woman T-shirt</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/woman-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/woman-tshirt/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Vapor Shirt</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -19,16 +30,10 @@
         <guid isPermaLink="true">http://yourdomain.com/labadiena/vapor-woman/</guid>
         
         
-        <category>woman</category>
-        
-        <category>shirt</category>
-        
-        <category>vaporshirt</category>
-        
       </item>
     
       <item>
-        <title>Still Hat</title>
+        <title>Stillwater 5panel</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -36,16 +41,10 @@
         <guid isPermaLink="true">http://yourdomain.com/labadiena/still-hat/</guid>
         
         
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>stillhat</category>
-        
       </item>
     
       <item>
-        <title>Simple Hat</title>
+        <title>Simple Snapback</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -53,28 +52,16 @@
         <guid isPermaLink="true">http://yourdomain.com/labadiena/simple-hat/</guid>
         
         
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>reedhat</category>
-        
       </item>
     
       <item>
-        <title>Reed Hat</title>
+        <title>Reed Snapback</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/reed-hat/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/reed-hat/</guid>
         
-        
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>reedhat</category>
         
       </item>
     
@@ -87,16 +74,10 @@
         <guid isPermaLink="true">http://yourdomain.com/labadiena/rainwater-coat/</guid>
         
         
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>rainwatercoat</category>
-        
       </item>
     
       <item>
-        <title>Poster t-shirt</title>
+        <title>Poster T-shirt</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -104,33 +85,10 @@
         <guid isPermaLink="true">http://yourdomain.com/labadiena/poster-tshirt/</guid>
         
         
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>postertshirt</category>
-        
       </item>
     
       <item>
-        <title>Groundwater Coat</title>
-        <description>
-</description>
-        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-        <link>http://yourdomain.com/labadiena/poster-cap/</link>
-        <guid isPermaLink="true">http://yourdomain.com/labadiena/poster-cap/</guid>
-        
-        
-        <category>man</category>
-        
-        <category>cap</category>
-        
-        <category>groundwatercoat</category>
-        
-      </item>
-    
-      <item>
-        <title>Mist Sweatshirt</title>
+        <title>Mist Hooded Sweatshirt</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -141,7 +99,7 @@
       </item>
     
       <item>
-        <title>Man t-shirt</title>
+        <title>à Man T-shirt</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -152,7 +110,7 @@
       </item>
     
       <item>
-        <title>Labadiena Sweater</title>
+        <title>labàdienà Sweater</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>

@@ -1,12 +1,12 @@
 ---
-layout: post
-title:  "Still Hat"
-title2:  "Still<br/>Hat"
-price: "50"
-description: "asdkajsdlkajsdlkajsdlas"
+layout: product
+title:  "Stillwater 5panel"
+title2:  "Stillwater <br/> 5panel"
+price: "40€"
+description: "5 panel cap, impregnated linen on visor bottom, embossed leather strap."
 image1: "/labadiena/img/still-hat-1.jpg"
 image2: "/labadiena/img/still-hat-2.jpg"
 image3:  "/labadiena/img/still-hat-3.jpg"
 image4:  "/labadiena/img/still-hat-4.jpg"
-categories: man cap stillhat
+filter: /shop/new-in/ /shop/hats/ /shop/men/ /shop/all/
 ---
