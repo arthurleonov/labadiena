@@ -1,13 +1,74 @@
+.menu-overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-black;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 100;
+  &--100height {
+    height: 100%;
+  }
+  &__table {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  &__verticalalign {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+  h3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 0.4s;
+      position: relative;  
+      &:hover, &.hover {
+          color: rgba(255, 255, 255, 1);
+          text-decoration: none;
+      }
+    }
+    }
+}
+
+
+
+
 .top-nav-icons {
   position: fixed;
   width: 100%;
   z-index: 999999999;
-  .logo {
-    margin-top: 0.9rem;
-    transition: all 2s ease;
-    // text-shadow: 0px 0px 5px rgba(35, 31, 32, 0.39);
-    &.logo-white {
-      color: $color-white;
+  .logo-nav {
+      &:after {
+      content: '';
+      display: block;
+      height: 0px;
+      width: 0;
+      background: none;
+      transition: none;
+    }
+    &:hover, &:hover, &.hover {
+      color: none;
+      text-decoration: none;
+      cursor: pointer; cursor: hand;
+      &:after {
+        width: 100%;
+        background: none;
+      }
+    }
+    .logo {
+      margin-top: 0.9rem;
+      transition: all 2s ease;
+      // text-shadow: 0px 0px 5px rgba(35, 31, 32, 0.39);
+      &.logo-white {
+        color: $color-white;
+      }
     }
   }
 }
@@ -169,44 +230,44 @@
 
 
 
-.menu-items {
-  height: 100%;
-}
+// .menu-items {
+//   height: 100%;
+// }
 
 
-.menu-container {
-  z-index: 5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $color-black;
-  height: 100%;
-  width: 100%;
-  visibility: hidden;
-  z-index: 100;
-  .table-align {
-    display: table;
-    width: 100%;
-    height: 100%;
-    .table-vertical-align {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-      h3 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-         a {
-           color: rgba(255, 255, 255, 0.5);
-           transition: color 0.4s;
-           position: relative;  
-           &:hover {
-            color: rgba(255, 255, 255, 1);
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
+// .menu-container {
+//   z-index: 5;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: $color-black;
+//   height: 100%;
+//   width: 100%;
+//   visibility: hidden;
+//   z-index: 100;
+//   .table-align {
+//     display: table;
+//     width: 100%;
+//     height: 100%;
+//     .table-vertical-align {
+//     display: table-cell;
+//     vertical-align: middle;
+//     height: 100%;
+//       h3 {
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//          a {
+//            color: rgba(255, 255, 255, 0.5);
+//            transition: color 0.4s;
+//            position: relative;  
+//            &:hover, &.hover {
+//             color: rgba(255, 255, 255, 1);
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
 
-}
+// }

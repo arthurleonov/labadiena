@@ -2,7 +2,7 @@
 var menu = function() {
   var defaults = {
  	menu: '.js-menu',
- 	menuContainer: '.menu-container',
+ 	menuContainer: '.menu-overlay',
  	menuItems: '.js-menu-items h3',
   topBar: '.js-topBar',
   navIcons: '.top-nav-icons',

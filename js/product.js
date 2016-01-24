@@ -1,7 +1,7 @@
 var product = function() {
   var defaults = {
     faqQuestion : '.js-q',
-    faqContent : '.js-a',
+    faqContent : '.product__faq__paragraph',
     faqCaret : '.js-caret'
   };
   return {

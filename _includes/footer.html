@@ -45,29 +45,36 @@
 
     <script src="{{site.baseurl}}/js/vendor/bootstrap.min.js"></script>
 
-    <script src="{{site.baseurl}}/js/TweenMax.min.js"></script>
+    <script src="{{site.baseurl}}/dist/all.min.js"></script>
 
-    <script src="{{site.baseurl}}/js/main.js"></script>
+    <script src="{{site.baseurl}}/dist/scrollreveal.min.js"></script>
 
-    <script src="{{site.baseurl}}/js/dropdown.js"></script>
-
-    <script src="{{site.baseurl}}/js/product.js"></script>
-
-    <script src="{{site.baseurl}}/js/lightslider.js"></script>
 
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
               product.init();
-              $('#lightSlider').lightSlider({
+
+                var config = {
+                    viewFactor : 0.8,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
                     gallery: true,
                     item: 1,
                     loop:true,
                     slideMargin: 0,
                     thumbItem: 4
                 });
-        });
 
     </script>
 

@@ -1,59 +1,37 @@
-.homepage-content {
+.homepage-section {
     padding-top: 8rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    .content-title {
+    // padding-left: 5rem;
+    // padding-right: 5rem;
+    &__mobile-title {
         position: absolute;
         z-index: 10;
         left: -40%;
         top: -5%;
         text-align: center;
         line-height: 3rem;
-        a, span {
-             font-family: $primary-font;
-        }
-        a {
-            font-size: 3rem;
-        }
-        span {
-           font-size: 3.5rem;
-        }
-        // test
-        a:after {
-          height: 5px;
-          margin-top: 5px;
-        }
-        a:hover {
-            &:after {
-                width: 80%;
-            }
-        }
     }
-
-    .main-title-2 {
+    &__desktop-title {
         position: absolute;
-        right: 8%;
-        top: -30%;
-        h1 {
-            font-size: 3rem;
+        top: -4%;
+        font-size: 3rem;
+        &--moveleft {
+            left: -20%;
+        }
+        &--moveright {
+            right: 5%;
+        }
+        &--textright {
             text-align: right;
         }
     }
+    &__img {
+        padding-bottom: 2rem;
+        &--margintop-big {
+            margin-top: 10rem;
+        }
+        &--margintop-small {
 
-    .sub-content {
-        margin-top: 2.5rem;
-    }
-
-    .photo-middle2 {
-        margin-top: 10rem;
-    }
-
-    .photo-right {
-        margin-top: 4rem;
-    }
-
-    .photo-middle {
-        margin-top: 15rem;
+        }
     }
 }
 
@@ -62,74 +40,44 @@
 @media (max-width: 480px) { }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-    .homepage-content {
-        padding-top: 2rem;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        .content-title {
-            position: initial;
-            a {
-                font-size: 2rem;
-            }
-            span {
-               font-size: 2.5rem;
-            }
-        }
-        .see-more {
-            padding-top: 1.5rem;
-            display: block;
-            font-size: 1.4rem;
-            font-family: $primary-font;
-        }
-        .main-title-2 {
-            h1 {
-                text-align: none;
-            }
-        }
-        .photo-right {
-            margin-top: 0;
-        }
+@media (max-width: 767px) {
 
-        .photo-middle {
-            margin-top: 1.5rem;
-        }
-        .sub-content {
-            margin-top: 1.7rem;
+    .homepage-section {
+        padding-top: 0;
+        &__mobile-title {
+            position: initial;
+            z-index: 10;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 1.8rem;
         }
     }
-    .mobile-padding {
-        padding-top: 0rem;
-    }
+
 }
+
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    .homepage-content {
+    .homepage-section {
         padding-top: 2rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        .content-title {
-            position: initial;
-            a {
-                font-size: 2rem;
+        // padding-right: 0.5rem;
+        // padding-left: 0.5rem;
+        &__img {
+            padding-bottom: 2rem;
+            &--margintop-big {
+                margin-top: 10rem;
             }
-            span {
-               font-size: 2.5rem;
-            }
-        }
-        .main-title-2 {
-            position: absolute;
-            right: 8%;
-            top: -30%;
-            h1 {
-                font-size: 2.2rem;
-                text-align: none;
-            }
-        }
+            &--margintop-small {
 
-        .photo-middle {
-            margin-top: 4rem;
+            }
+        }
+        &__desktop-title {
+            &--moveright {
+                right: 10%;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
         }
     }
 }

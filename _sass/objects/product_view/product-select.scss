@@ -5,19 +5,17 @@
 
 .product-container {
     margin-top: 4rem;
-    .product-items {
-        margin-top: 2.5rem;
-        position: relative;
+    padding-top: 2.5rem;
+    position: relative;
         h4 {
             margin-bottom: 0rem;
             position: absolute;
             top: 2%;
-            left: -10%;
+            left: 0%;
         }
         img {
             padding-right: 3rem;
         }
-    }
 }
 
 
@@ -40,18 +38,16 @@
     }
     .product-container {
         margin-top: 0;
-        .product-items {
-            margin-top: 2.5rem;
-            position: relative;
-            h4 {
-                position: initial;
-                margin-bottom: 1rem;
-                margin-top: 2rem;
-                font-size: 1.5rem;
-            }
-            img {
-                padding-right: 0rem;
-            }
+        padding-top: 0rem;
+        position: relative;
+        h4 {
+            position: initial;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+        img {
+            padding-right: 0rem;
         }
     }
 

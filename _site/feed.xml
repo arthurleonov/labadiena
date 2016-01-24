@@ -6,73 +6,114 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Sun, 24 Jan 2016 17:35:29 +0000</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 17:35:29 +0000</lastBuildDate>
+=======
+    <pubDate>Sun, 24 Jan 2016 17:33:02 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:33:02 +0000</lastBuildDate>
+>>>>>>> development
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Vapor Women Shirt</title>
+        <title>à Woman T-shirt</title>
         <description>
 </description>
+<<<<<<< HEAD
         <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/vaporwomen-shirt/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/vaporwomen-shirt/</guid>
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/woman-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/woman-tshirt/</guid>
+>>>>>>> development
         
-        
-        <category>shirt</category>
-        
-        <category>woman</category>
-        
-        <category>new</category>
         
       </item>
     
       <item>
-        <title>simple snapback</title>
+        <title>Vapor Shirt</title>
         <description>
 </description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/vapor-woman/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/vapor-woman/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Stillwater 5panel</title>
+        <description>
+</description>
+<<<<<<< HEAD
         <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/simple-snapback/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/simple-snapback/</guid>
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/still-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/still-hat/</guid>
+>>>>>>> development
         
-        
-        <category>man</category>
-        
-        <category>hats</category>
         
       </item>
     
       <item>
-        <title>labàdienà sweater</title>
+        <title>Simple Snapback</title>
         <description>
 </description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/simple-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/simple-hat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Reed Snapback</title>
+        <description>
+</description>
+<<<<<<< HEAD
         <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/labadiena-sweater/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/labadiena-sweater/</guid>
         
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/reed-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/reed-hat/</guid>
+>>>>>>> development
         
-        <category>man</category>
-        
-        <category>sweater</category>
-        
-        <category>new</category>
         
       </item>
     
       <item>
-        <title>Vapor Menshirt</title>
+        <title>Rainwater Coat</title>
         <description>
 </description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/rainwater-coat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/rainwater-coat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Poster T-shirt</title>
+        <description>
+</description>
+<<<<<<< HEAD
         <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/vapor-shirt/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/vapor-shirt/</guid>
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/poster-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/poster-tshirt/</guid>
+>>>>>>> development
         
-        
-        <category>man</category>
-        
-        <category>shirt</category>
-        
-        <category>new</category>
         
       </item>
     
@@ -80,14 +121,38 @@
         <title>Mist Hooded Sweatshirt</title>
         <description>
 </description>
-        <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/mist-sweatshirt/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/mist-sweatshirt/</guid>
         
         
-        <category>man</category>
+      </item>
+    
+      <item>
+        <title>à Man T-shirt</title>
+        <description>
+</description>
+<<<<<<< HEAD
+        <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/mist-sweatshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/mist-sweatshirt/</guid>
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/man-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/man-tshirt/</guid>
+>>>>>>> development
         
-        <category>sweater</category>
+        
+      </item>
+    
+      <item>
+        <title>labàdienà Sweater</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/labadiena-sweater/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/labadiena-sweater/</guid>
+        
         
       </item>
     

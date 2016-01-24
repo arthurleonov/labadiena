@@ -1,0 +1,11 @@
+---
+layout: product
+title:  "Reed Snapback"
+title2:  "Reed <br/> Snapback"
+price: "75€"
+description: "Handweaved visor made of natural reed, leather fairytale tag on front, leather strap."
+image1: "/labadiena/img/reed-hat-1.jpg"
+image2: "/labadiena/img/reed-hat-2.jpg"
+image3:  "/labadiena/img/reed-hat-3.jpg"
+filter: ["/shop/new/", "/shop/hats/", "/shop/men/", "/shop/all/"]
+---
