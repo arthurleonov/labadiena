@@ -175,7 +175,24 @@
               menu.init();
               dropdown.init();
               product.init();
+<<<<<<< HEAD
               $('#lightSlider').lightSlider({
+=======
+
+                var config = {
+                    viewFactor : 0.3,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
+>>>>>>> development
                     gallery: true,
                     item: 1,
                     loop:true,
