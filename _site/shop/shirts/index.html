@@ -15,6 +15,11 @@
    <link rel="stylesheet" href="/labadiena/dist/main.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+   <style>
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .js-block { visibility: hidden; }
+    </style>
+
 
   <!-- <link rel="stylesheet" href="/labadiena/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/labadiena/shop/shirts/">
@@ -97,9 +102,7 @@
 
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        <section class="container-fluid animated fadeInUpBig">
+        <section class="container-fluid">
   <div class="row visible-xs hidden-sm">
     <div class="col-xs-12 filter-container">
       <h4 class="text-center js-show-filters">
@@ -151,7 +154,7 @@
     </div>
   </div>
   <div class="row">
-       <div class="col-sm-3 filter-container hidden-xs">
+     <div class="col-sm-3 js-block filter-container hidden-xs">
   <div style="max-width: 8rem;">
     <h2>
       Sort By:
@@ -207,8 +210,8 @@
       <div class="row">
         
           
-            <div class="col-sm-6 1st-column js-hover">
-              <div class="product-items js-hover">
+            <div class="col-sm-6 js-block js-hover">
+              <div class="js-hover">
                 <h4 class="visible-xs hidden-sm">
                     <a href="/labadiena/woman-tshirt/">
                       à Woman T-shirt 
@@ -227,8 +230,8 @@
            
         
           
-            <div class="col-sm-6 1st-column js-hover">
-              <div class="product-items js-hover">
+            <div class="col-sm-6 js-block js-hover">
+              <div class="js-hover">
                 <h4 class="visible-xs hidden-sm">
                     <a href="/labadiena/vapor-woman/">
                       Vapor Shirt 
@@ -255,8 +258,8 @@
            
         
           
-            <div class="col-sm-6 1st-column js-hover">
-              <div class="product-items js-hover">
+            <div class="col-sm-6 js-block js-hover">
+              <div class="js-hover">
                 <h4 class="visible-xs hidden-sm">
                     <a href="/labadiena/poster-tshirt/">
                       Poster T-shirt 
@@ -277,8 +280,8 @@
            
         
           
-            <div class="col-sm-6 1st-column js-hover">
-              <div class="product-items js-hover">
+            <div class="col-sm-6 js-block js-hover">
+              <div class="js-hover">
                 <h4 class="visible-xs hidden-sm">
                     <a href="/labadiena/man-tshirt/">
                       à Man T-shirt 
@@ -305,9 +308,7 @@
   </div>
 </section>
 
-      </div>
-    </div>
-
+  
     <footer>
     <div class="container">
     <div class="row">
@@ -357,20 +358,34 @@
 
     <script src="/labadiena/dist/all.min.js"></script>
 
+    <script src="/labadiena/dist/scrollreveal.min.js"></script>
+
 
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
               product.init();
-              $('#lightSlider').lightSlider({
+
+                var config = {
+                    viewFactor : 0.8,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
                     gallery: true,
                     item: 1,
                     loop:true,
                     slideMargin: 0,
                     thumbItem: 4
                 });
-        });
 
     </script>
 

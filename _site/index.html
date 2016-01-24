@@ -14,6 +14,11 @@
    <link rel="stylesheet" href="/labadiena/dist/main.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+   <style>
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .js-block { visibility: hidden; }
+    </style>
+
 
   <!-- <link rel="stylesheet" href="/labadiena/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/labadiena/">
@@ -98,23 +103,22 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="jumbotron text-center animated fadeInUpBig" style="height: 100%;
+        <div class="jumbotron js-block" style="height: 100%;
   background: url('/labadiena/img/header2.png') no-repeat scroll bottom center;
   background-size: cover;
   background-position-y: 100%;">
-  <div class="vertical-center">
-    <div class="container text-center">
-      <!-- <h1>
-        2015
-        <br>
-        Collection
-      </h1> -->
-      <i class="fa fa-play-circle"></i>
-    </div>
+  <div class="jumbotron--vertical-center">
+      <h2 class="text-center jumbotron__title">
+        <a href="/labadiena/shop/newin/">
+          S015 Collection
+        </a>
+      </h2>
+      <div class="jumbotron__downarrow">
+      </div>
   </div>
 </div>
 
-<section class="homepage-section container-fluid">
+<section class="homepage-section js-block container-fluid">
   <div class="row">
     <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
        <h1 class="homepage-section__mobile-title  hidden-sm">
@@ -163,7 +167,7 @@
   </div> 
 </section>
 
-<section class="about">
+<section class="about js-block">
 	<div class="about__bg-tilted">
 		<div class="text-center">
 			<h1 class="about__letter-a">
@@ -176,7 +180,7 @@
 	</div>
 </section>
 
-<section class="homepage-section container-fluid">
+<section class="homepage-section js-block container-fluid">
   <div class="row">
     <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
        <h1 class="homepage-section__mobile-title">
@@ -282,20 +286,34 @@
 
     <script src="/labadiena/dist/all.min.js"></script>
 
+    <script src="/labadiena/dist/scrollreveal.min.js"></script>
+
 
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
               product.init();
-              $('#lightSlider').lightSlider({
+
+                var config = {
+                    viewFactor : 0.8,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
                     gallery: true,
                     item: 1,
                     loop:true,
                     slideMargin: 0,
                     thumbItem: 4
                 });
-        });
 
     </script>
 

@@ -14,6 +14,11 @@
    <link rel="stylesheet" href="/labadiena/dist/main.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+   <style>
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .js-block { visibility: hidden; }
+    </style>
+
 
   <!-- <link rel="stylesheet" href="/labadiena/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/labadiena/poster-tshirt/">
@@ -96,11 +101,9 @@
 
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="product-selection container m-3rem-t">
+        <div class="product container m-3rem-t">
   <div class="row">
-    <div class="col-md-6 col-md-offset-1 no-padding-lg">
+    <div class="col-md-6 product--padding-0 col-md-offset-1">
       <ul id="lightSlider">
   <li data-thumb="/labadiena/img/poster-tshirt-1.jpg">
     <img class="img-responsive" src="/labadiena/img/poster-tshirt-1.jpg" />
@@ -116,14 +119,15 @@
   </li>
 </ul>
     </div>
-    <div class="col-md-4 right-container">
-      <div class="right-inner-container">
+    <div class="col-md-4 product--padding-0">
+      <div class="product__right-container">
         <h2>
           Poster T-shirt
         </h2>
         <h4>
           33€
         </h4>
+        <br/>
         <p>
           Embossed silkscreen poster print, fairytale print inside, split hem.
         </p>
@@ -131,7 +135,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="custom-dropdown">
-  <button class="btn default padding-05 width-100">
+  <button class="btn btn__default btn--padding-05 btn--width-100">
     Select Size<span class="caret"></span>
   </button>
   <div class="dropdown-container">
@@ -146,68 +150,61 @@
   
           </div>
           <div class="col-md-6">
-            <button class="btn default fill padding-05 width-100">
+            <button class="btn btn__default btn--fill btn--padding-05 btn--width-100">
               Add to Bag
             </button>
           </div>
         </div>
       <hr/>
-      <div class="faq">
-  <div class="q js-q">
-    <h5>
-      <a>
-        Where are the garments produced?
-      </a>
-      <span class="caret right js-caret"></span>
+      <div class="product__faq">
+  <div class="js-q">
+    <a class="product__faq__title">
+      Where are the garments produced?
+    </a>
+    <span class="product__faq__caret right js-caret"></span>
     </h5>
-    <p class='js-a'>
+    <p class='product__faq__paragraph'>
       All our  products and are produced in Lithuania. Only the finest materials are used and the quality of the products is guaranteed. 
     </p>
   </div>
 <hr/>
-  <div class="q js-q">
-    <h5>
-      <a>
-        What forms of payment do you accept?
-      </a>
-       <span class="caret js-caret right"></span>
-    </h5>
-    <p class='js-a'>
+  <div class="js-q">
+    <a class="product__faq__title">
+      What forms of payment do you accept?
+    </a>
+    <span class="product__faq__caret js-caret right"></span>
+    <p class='product__faq__paragraph'>
        We gladly accept Visa, Mastercard, American Express, or regular account payments all through Paypal. Having Paypal account is unnecesessary, although if you already have one you may use it.  
     </p>
   </div>
   <hr/>
   <div class="q js-q">
-    <h5>
-      <a>
-        How does shipping work?
-      </a>
-      <span class="caret js-caret right"></span>
-    </h5>
-    <p class='js-a'>
+    <a class="product__faq__title">
+      How does shipping work?
+    </a>
+    <span class="product__faq__caret js-caret right"></span>
+    <p class='product__faq__paragraph'>
       Orders will be shipped the next working day upon receipt. Shipping inside Lithuania is carried out by the Post24. Shipments are distributed through postal terminals. For list of terminals and more information visit www.post24.lt or contact us via email. Shipping outside Lithuania is carried out by the Lithuanian Post.   
     </p>
   </div>
 <hr/>
   <div class="q js-q">
-    <h5>
-      <a>
-        How does shipping shipping cost?
-      </a><span class="caret js-caret right"></span>
-    </h5>
-    <p class='js-a'>
+    <a class="product__faq__title">
+      How does shipping shipping cost?
+    </a><span class="product__faq__caret js-caret right"></span>
+    <p class='product__faq__paragraph'>
       Shipping in Lithuania is free of charge.  For other countries charges depend on your location and are indicated automatically when choosing your country. All orders that are shipped outside of the EU could be subject to import duty and tax. Please contact your local customs office for further details of charges.
     </p>
   </div>
 </div>
-    </div>  <!-- end of right-inner-container -->    
+    </div>
   </div> <!-- end of col-md-4 --> 
 </div>
 </div>
 
-      </div>
-    </div>
 
+
+  
     <footer>
     <div class="container">
     <div class="row">
@@ -257,20 +254,34 @@
 
     <script src="/labadiena/dist/all.min.js"></script>
 
+    <script src="/labadiena/dist/scrollreveal.min.js"></script>
+
 
     <script>
         $(document).ready(function() {
               menu.init();
               dropdown.init();
               product.init();
-              $('#lightSlider').lightSlider({
+
+                var config = {
+                    viewFactor : 0.8,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
                     gallery: true,
                     item: 1,
                     loop:true,
                     slideMargin: 0,
                     thumbItem: 4
                 });
-        });
 
     </script>
 

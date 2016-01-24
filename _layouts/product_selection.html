@@ -3,16 +3,16 @@ layout: default
 ---
 
 
-<section class="container-fluid animated fadeInUpBig">
+<section class="container-fluid">
   {% include shop/filter_mobile.html %}
   <div class="row">
-      {% include shop/filter_desktop.html %}
+    {% include shop/filter_desktop.html %}
     <div class="col-sm-9 col-xs-12 product-container">
       <div class="row">
         {% for post in site.posts %}
           {% if post.filter contains {{page.url}} %}
-            <div class="col-sm-6 1st-column js-hover">
-              <div class="product-items js-hover">
+            <div class="col-sm-6 js-block js-hover">
+              <div class="js-hover">
                 <h4 class="visible-xs hidden-sm">
                     <a href="{{site.baseurl}}{{post.url}}">
                       {{post.title}} 
