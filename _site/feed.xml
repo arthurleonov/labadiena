@@ -6,8 +6,18 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Sun, 24 Jan 2016 18:32:12 +0000</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 18:32:12 +0000</lastBuildDate>
+=======
+<<<<<<< HEAD
+    <pubDate>Sun, 24 Jan 2016 17:47:47 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:47:47 +0000</lastBuildDate>
+=======
+    <pubDate>Sun, 24 Jan 2016 17:59:04 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:59:04 +0000</lastBuildDate>
+>>>>>>> development
+>>>>>>> 762f96e2a58883d8921e33fc5c0ebc02da139a58
     <generator>Jekyll v3.0.1</generator>
     
       <item>
