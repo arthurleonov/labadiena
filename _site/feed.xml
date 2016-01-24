@@ -6,35 +6,128 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Sun, 24 Jan 2016 17:43:54 +0000</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 17:43:54 +0000</lastBuildDate>
+=======
+    <pubDate>Sun, 24 Jan 2016 17:33:02 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:33:02 +0000</lastBuildDate>
+>>>>>>> development
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
+        <title>à Woman T-shirt</title>
+        <description>
 </description>
+<<<<<<< HEAD
         <pubDate>Sat, 21 Nov 2015 19:41:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/welcome-to-jekyll/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/welcome-to-jekyll/</guid>
+=======
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/woman-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/woman-tshirt/</guid>
+>>>>>>> development
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Vapor Shirt</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/vapor-woman/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/vapor-woman/</guid>
         
-        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Stillwater 5panel</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/still-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/still-hat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Simple Snapback</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/simple-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/simple-hat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Reed Snapback</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/reed-hat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/reed-hat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rainwater Coat</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/rainwater-coat/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/rainwater-coat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Poster T-shirt</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/poster-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/poster-tshirt/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mist Hooded Sweatshirt</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/mist-sweatshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/mist-sweatshirt/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>à Man T-shirt</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/man-tshirt/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/man-tshirt/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>labàdienà Sweater</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/labadiena/labadiena-sweater/</link>
+        <guid isPermaLink="true">http://yourdomain.com/labadiena/labadiena-sweater/</guid>
+        
         
       </item>
     

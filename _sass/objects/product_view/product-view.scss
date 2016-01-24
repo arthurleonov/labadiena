@@ -1,0 +1,62 @@
+.product {
+    margin-top: 7rem;
+    margin-bottom: 7rem; 
+    &--padding-0 {
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    &__right-container {
+        background-color: $color-white;
+        padding: 1rem;
+    }
+    &__faq {
+        &__title {
+            font-family: $primary-font;
+            font-size: 1rem;
+            padding-bottom: 0;
+        }
+        &__paragraph {
+            display: none;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;;
+        }
+        &__caret {
+            display: inline-block;
+            margin-top: 0.3rem;
+            border-top: 6px solid;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+            transition: 200ms ease;
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    } 
+}
+
+.lSGallery { // slider
+    li {
+        &.active {
+            &:hover {
+                border-radius: none;
+            }
+            a img {
+                border: 2px solid $color-lightbrown;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) {
+}
+
+@media only screen and (max-width : 992px) {
+    .product {
+        &--padding-0 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }    
+}
+
+

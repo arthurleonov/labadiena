@@ -1,0 +1,273 @@
+.menu-overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-black;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 100;
+  &--100height {
+    height: 100%;
+  }
+  &__table {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  &__verticalalign {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+  h3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 0.4s;
+      position: relative;  
+      &:hover, &.hover {
+          color: rgba(255, 255, 255, 1);
+          text-decoration: none;
+      }
+    }
+    }
+}
+
+
+
+
+.top-nav-icons {
+  position: fixed;
+  width: 100%;
+  z-index: 999999999;
+  .logo-nav {
+      &:after {
+      content: '';
+      display: block;
+      height: 0px;
+      width: 0;
+      background: none;
+      transition: none;
+    }
+    &:hover, &:hover, &.hover {
+      color: none;
+      text-decoration: none;
+      cursor: pointer; cursor: hand;
+      &:after {
+        width: 100%;
+        background: none;
+      }
+    }
+    .logo {
+      margin-top: 0.9rem;
+      transition: all 2s ease;
+      // text-shadow: 0px 0px 5px rgba(35, 31, 32, 0.39);
+      &.logo-white {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding-top: 12px;
+  transition: all 500ms cubic-bezier(1.000, 0.000, 0.645, 0.650);
+  z-index: 200;
+  cursor: pointer; cursor: hand;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.menu-bar {
+  display: block;
+  position: relative;
+  background: $color-black;
+  width: 26px;
+  height: 2px;
+  border-radius: 1px;
+  transition: all 300ms;
+  margin: 0 auto;
+}
+
+.bar1 {
+  top: 0;
+  animation: topbar-back 500ms;
+  animation-fill-mode: both;
+  animation-play-state: initial !important;
+}
+
+.bar2 { opacity: 1; }
+
+.bar3 {
+  bottom: 0;
+  animation: bottombar-back 500ms;
+  animation-fill-mode: both;
+  animation-play-state: initial !important;
+}
+
+.menu-bar + .menu-bar {
+  margin-top: 5px;
+}
+
+.toggled .bar1 {
+  top: 25%;
+  animation: topbar-x 500ms;
+  animation-fill-mode: both;
+}
+
+.toggled .bar2 {
+  opacity: 0;
+}
+
+.toggled .bar3 {
+  bottom: 25%;
+  animation: bottombar-x 500ms;
+  animation-fill-mode: both;
+}
+
+.menu-bar-white {
+  background: $color-white;
+}
+
+@keyframes topbar-x {
+  0% {
+    top: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  45% {
+    top: 25%;
+    -webkit-transform: rotate(145deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(130deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(135deg);
+  }
+}
+
+@keyframes topbar-back {
+  0% {
+    top: 25%;
+    -webkit-transform: rotate(135deg);
+  }
+
+  45% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(5deg);
+  }
+
+  100% {
+    top: 0;
+    -webkit-transform: rotate(0);
+  }
+}
+
+@keyframes bottombar-x {
+  0% {
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  45% {
+    bottom: 25%;
+    -webkit-transform: rotate(-145deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-130deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-135deg);
+  }
+}
+
+@keyframes bottombar-back {
+  0% {
+    bottom: 25%;
+    -webkit-transform: rotate(-135deg);
+  }
+
+  45% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  100% {
+    bottom: 0;
+    -webkit-transform: rotate(0);
+  }
+}
+
+
+
+// .menu-items {
+//   height: 100%;
+// }
+
+
+// .menu-container {
+//   z-index: 5;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: $color-black;
+//   height: 100%;
+//   width: 100%;
+//   visibility: hidden;
+//   z-index: 100;
+//   .table-align {
+//     display: table;
+//     width: 100%;
+//     height: 100%;
+//     .table-vertical-align {
+//     display: table-cell;
+//     vertical-align: middle;
+//     height: 100%;
+//       h3 {
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//          a {
+//            color: rgba(255, 255, 255, 0.5);
+//            transition: color 0.4s;
+//            position: relative;  
+//            &:hover, &.hover {
+//             color: rgba(255, 255, 255, 1);
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+// }

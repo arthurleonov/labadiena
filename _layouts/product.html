@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+<div class="product container m-3rem-t">
+  <div class="row">
+    <div class="col-md-6 product--padding-0 col-md-offset-1">
+      {% include shop/slider.html %}
+    </div>
+    <div class="col-md-4 product--padding-0">
+      <div class="product__right-container">
+        <h2>
+          {{page.title}}
+        </h2>
+        <h4>
+          {{page.price}}
+        </h4>
+        <br/>
+        <p>
+          {{page.description}}
+        </p>
+      <hr/>
+        <div class="row">
+          <div class="col-md-6">
+            {% include shop/sizes.html %}
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn__default btn--fill btn--padding-05 btn--width-100">
+              Add to Bag
+            </button>
+          </div>
+        </div>
+      <hr/>
+      {% include shop/product_faq.html %}
+    </div>
+  </div> <!-- end of col-md-4 --> 
+</div>
+</div>
+
+

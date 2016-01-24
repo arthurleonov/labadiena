@@ -9,11 +9,15 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-   <link rel="stylesheet" href="/labadiena/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/labadienacss/bootstrap-theme.min.css">
-   <link rel="stylesheet" href="/labadiena/css/animate.css">
-   <link rel="stylesheet" href="/labadiena/css/main.css">
+   <link rel="stylesheet" href="/labadiena/dist/bootstrap.min.css">
+   <link rel="stylesheet" href="/labadiena/dist/lightslider.css">
+   <link rel="stylesheet" href="/labadiena/dist/main.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+   <style>
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .js-block { visibility: hidden; }
+    </style>
 
 
   <!-- <link rel="stylesheet" href="/labadiena/css/main.css">
@@ -24,35 +28,35 @@
 
   <body>
 
-          <div class="menu-container">
-    <div class="row text-center menu-items js-menu-items">
-        <div class="table-align">
-            <div class="table-vertical-align">
+          <div class="menu-overlay">
+    <div class="row text-center menu-overlay--100height js-menu-items">
+        <div class="menu-overlay__table">
+            <div class="menu-overlay__verticalalign">
                 <div class="col-md-3">
                     <h3>
-                        <a>
-                                Campaign
+                        <a class="" href="/labadiena/">
+                            Home
                         </a>
                     </h3>
                 </div>
                 <div class="col-md-3">
                     <h3>
-                        <a>
-                                Collection
+                        <a class="" href="/labadiena/shop/all/">
+                            Shop
                         </a>
                     </h3>
                 </div>
                 <div class="col-md-3">
                      <h3>
-                        <a>
-                                About Us
+                        <a class="" href="/labadiena/about/about.html">
+                            About Us
                         </a>
                     </h3>
                 </div>
                 <div class="col-md-3">
                       <h3>
-                        <a>
-                                Stores
+                        <a class="">
+                            Contact Us
                         </a>
                     </h3>
                 </div>
@@ -73,8 +77,12 @@
               <span class="menu-bar bar3"></span>
             </div>
         </div>
-        <div class="col-xs-6">
-            <h1 class="text-center logo">labàdienà</h1>
+        <div class="col-xs-6 text-center">
+            <a href="/labadiena/" class="logo-nav">
+                <h1 class="logo">
+                        labàdienà
+                </h1>
+            </a>
         </div>
         <div class="col-xs-3">
         </div>
@@ -95,46 +103,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="jumbotron text-center animated fadeInUpBig" style="height: 100%;
+        <div class="jumbotron js-block" style="height: 100%;
   background: url('/labadiena/img/header2.png') no-repeat scroll bottom center;
   background-size: cover;
   background-position-y: 100%;">
-  <div class="vertical-center">
-    <div class="container text-center">
-      <!-- <h1>
-        2015
-        <br>
-        Collection
-      </h1> -->
-      <i class="fa fa-play-circle"></i>
-    </div>
+  <div class="jumbotron--vertical-center">
+      <h2 class="text-center jumbotron__title">
+        <a href="/labadiena/shop/newin/">
+          S015 Collection
+        </a>
+      </h2>
+      <div class="jumbotron__downarrow">
+      </div>
   </div>
 </div>
 
-<section class="homepage-content container-fluid">
+<section class="homepage-section js-block container-fluid">
   <div class="row">
     <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
-       <div class="content-title">
-            <a href="#">
-              <span>
-                Winter Hats
-              </span>
-                2014/2015
-            </a>
-        </div>
+       <h1 class="homepage-section__mobile-title  hidden-sm">
+              <a href="/labadiena/shop/hats/">
+                Winter Hats 2014/2015
+              </a>
+        </h1>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-5 mobile-padding">
-        <div>
-            <img class="img-responsive" src="/labadiena/img/photo19.jpg"></img>
-        </div>
-        <div class="row sub-content">
+        <img class="img-responsive homepage-section__img" src="/labadiena/img/photo19.jpg"></img>
+        <div class="row homepage-section__middle-container__bottom-images">
             <div class="col-xs-6">
-                <img class="img-responsive" src="/labadiena/img/photo18.jpg"></img>
+                <img class="img-responsive homepage-section__img" src="/labadiena/img/photo18.jpg"></img>
             </div>
             <div class="col-xs-6">
-                <img class="img-responsive" src="/labadiena/img/photo22.jpg"></img>
+                <img class="img-responsive homepage-section__img" src="/labadiena/img/photo22.jpg"></img>
             </div>
         </div>
         <div class="row">
@@ -150,80 +152,50 @@
         </div>
     </div>
     <div class="col-sm-3 hidden-xs">
-        <div class="content-title">
-            <a href="#">
-              <span>
-                 Winter Hats
-              </span>
-              <br/>
-               2014/2015
-            </a>
-        </div>
-        <img class="img-responsive photo-middle" src="/labadiena/img/photo20.jpg"></img>
+        <h1 class="homepage-section__desktop-title homepage-section__desktop-title--moveleft">
+          <a href="/labadiena/shop/hats/">
+            Winter Hats<br>2014/2015
+          </a>
+        </h1>
+        <img class="img-responsive homepage-section__img homepage-section__img--margintop-big" src="/labadiena/img/photo20.jpg"></img>
     </div>
     <div class="col-sm-4 hidden-xs">
         <div>
-            <img class="img-responsive" src="/labadiena/img/photo21.jpg"></img>
+            <img class="img-responsive homepage-section__img" src="/labadiena/img/photo21.jpg"></img>
         </div>
     </div> 
   </div> 
 </section>
 
-<section class="about container-fluid">
-	<div class="bg-tilted">
-		<div class="row text-center">
-			<h1>
+<section class="about js-block">
+	<div class="about__bg-tilted">
+		<div class="text-center">
+			<h1 class="about__letter-a">
 				à
 			</h1>
-		    <p class="">
+		    <p class="about__paragraph">
 		      labàdienà is an initiative which promotes nature friendly environment as well as pleasant and effortless communication. Expressing our ideas through our products we seek to involve individuals with common attitude towards the positive movement.
 		    </p>
 		 </div>
 	</div>
 </section>
 
-<section class="homepage-content container-flui">
+<section class="homepage-section js-block container-fluid">
   <div class="row">
-    <div class="row">
-      <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
-        <div class="content-title">
-          <h1>
-            <a href="#">
-              SS2015
-  
-              Gyvybės vanduo
+    <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+       <h1 class="homepage-section__mobile-title">
+            <a href="/labadiena/shop/newin/">
+                SS2015 Gyvybės vanduo
             </a>
-          </h1>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 hidden-xs">
-      <img class="img-responsive" src="/labadiena/img/photo23.jpg"></img>
-    </div>
-    <div class="col-sm-3 hidden-xs">
-      <img class="img-responsive photo-middle2" src="/labadiena/img/photo25.jpg"></img>
-    </div>
-    <div class="col-sm-5 mobile-padding photo-right">
-      <div class="main-title-2">
-        <h1 class=" hidden-xs">
-          <a href="#">
-            SS2015
-            <br>
-            Gyvybės vanduo
-          </a>
         </h1>
-      </div>
-      <div>
-        <img class="img-responsive" src="/labadiena/img/photo11.jpg"></img>
-      </div>
-      <div class="row sub-content">
-        <div class="col-xs-6">
-          <img class="img-responsive" src="/labadiena/img/photo15.jpg"></img>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 mobile-padding">
+        <div>
+            <img class="img-responsive homepage-section__img" src="/labadiena/img/photo23.jpg"></img>
         </div>
-        <div class="col-xs-6">
-          <img class="img-responsive" src="/labadiena/img/photo14.jpg"></img>
-        </div>
-         <div class="row">
+        <div class="row">
           <div class="col-xs-4">
           </div>
           <div class="col-xs-4 text-center hidden-sm hidden-md hidden-lg">
@@ -234,54 +206,32 @@
           <div class="col-xs-4">
           </div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="col-sm-3 hidden-xs">
+        <img class="img-responsive homepage-section__img" src="/labadiena/img/photo25.jpg"></img>
+    </div>
+    <div class="col-sm-5 hidden-xs">
+        <h1 class="hidden-xs homepage-section__desktop-title homepage-section__desktop-title--textright homepage-section__desktop-title--moveright">
+              <a href="/labadiena/shop/newin/">
+                SS2015<br>
+                Gyvybės vanduo
+              </a>
+        </h1>
+        <div>
+            <img class="img-responsive homepage-section__img homepage-section__img--margintop-big" src="/labadiena/img/photo11.jpg"></img>
+        </div>
+        <div class="row homepage-section__middle-container__bottom-images">
+            <div class="col-xs-6">
+                <img class="img-responsive homepage-section__img" src="/labadiena/img/photo15.jpg"></img>
+            </div>
+            <div class="col-xs-6">
+                <img class="img-responsive homepage-section__img" src="/labadiena/img/photo14.jpg"></img>
+            </div>
+        </div>
+    </div> 
+  </div> 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <section class="container-fluid homepage-content">
-  <div class="main-title">
-      <h1 class="text-right">
-        <a href="#">
-             SS2015
-        <br>
-        Gyvybės vanduo
-        </a>
-      </h1>
-  </div>
-  <div class="row"> 
-    <div class="col-md-4">
-      <img class="img-responsive" src="/labadiena/img/photo23.jpg">
-    </div>
-    <div class="col-md-3">
-      <img class="img-responsive" src="/labadiena/img/photo25.jpg">
-    </div>
-    <div class="col-md-5">
-       <img class="img-responsive" src="/labadiena/img/photo11.jpg">
-       <div clas="row">
-          <div class="col-md-6 bottom-right padding-left-0">
-             <img class="img-responsive" src="/labadiena/img/photo15.jpg">
-          </div>
-          <div class="col-md-6 bottom-right padding-right-0">
-            <img class="img-responsive" src="/labadiena/img/photo14.jpg">
-          </div>
-       </div>
-    </div>
-  </div>
-</section> -->
 
 
       </div>
@@ -330,21 +280,40 @@
     </div> 
 
     
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="/labadiena/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="/labadiena/js/vendor/bootstrap.min.js"></script>
 
-    <script src="/labadiena/js/TweenMax.min.js"></script>
+    <script src="/labadiena/dist/all.min.js"></script>
 
-    <script src="/labadiena/js/main.js"></script>
+    <script src="/labadiena/dist/scrollreveal.min.js"></script>
+
 
     <script>
         $(document).ready(function() {
               menu.init();
-        });
+              dropdown.init();
+              product.init();
+
+                var config = {
+                    viewFactor : 0.8,
+                    duration   : 700,
+                    distance   : "200px",
+                    delayType  : "onload",
+                    scale      : 1
+                };
+
+                window.sr = ScrollReveal( config )
+                .reveal( ".js-block", { reset: false } )
+                });
+
+                $('#lightSlider').lightSlider({
+                    gallery: true,
+                    item: 1,
+                    loop:true,
+                    slideMargin: 0,
+                    thumbItem: 4
+                });
 
     </script>
 
