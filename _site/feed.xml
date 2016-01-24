@@ -7,12 +7,17 @@
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <pubDate>Sun, 24 Jan 2016 17:35:29 +0000</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 17:35:29 +0000</lastBuildDate>
 =======
     <pubDate>Sun, 24 Jan 2016 17:33:02 +0000</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 17:33:02 +0000</lastBuildDate>
 >>>>>>> development
+=======
+    <pubDate>Sun, 24 Jan 2016 17:47:47 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:47:47 +0000</lastBuildDate>
+>>>>>>> master
     <generator>Jekyll v3.0.1</generator>
     
       <item>
