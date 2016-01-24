@@ -6,28 +6,17 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Sun, 24 Jan 2016 17:43:54 +0000</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2016 17:43:54 +0000</lastBuildDate>
-=======
-    <pubDate>Sun, 24 Jan 2016 17:33:02 +0000</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2016 17:33:02 +0000</lastBuildDate>
->>>>>>> development
+    <pubDate>Sun, 24 Jan 2016 17:47:47 +0000</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 17:47:47 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>à Woman T-shirt</title>
         <description>
 </description>
-<<<<<<< HEAD
-        <pubDate>Sat, 21 Nov 2015 19:41:00 +0000</pubDate>
-        <link>http://yourdomain.com/labadiena/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://yourdomain.com/labadiena/welcome-to-jekyll/</guid>
-=======
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/labadiena/woman-tshirt/</link>
         <guid isPermaLink="true">http://yourdomain.com/labadiena/woman-tshirt/</guid>
->>>>>>> development
         
         
       </item>
