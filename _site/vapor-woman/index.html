@@ -9,14 +9,15 @@
   <title>Vapor Shirt</title>
   <meta name="description" content="">
 
-   <link rel="stylesheet" href="/labadiena/dist/bootstrap.min.css">
-   <link rel="stylesheet" href="/labadiena/dist/lightslider.css">
-   <link rel="stylesheet" href="/labadiena/dist/main.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/bootstrap.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/lightslider.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/main.css">
+
 
    <style>
       /* Ensure elements load hidden before ScrollReveal runs */
-      .js-block { visibility: hidden; }
+      .js-up, .js-fadeIn, .js-down { visibility: hidden; }
     </style>
 
 
@@ -27,6 +28,17 @@
 
 
   <body>
+
+ <!--  <div class="loader">
+    <h1 class="loader__symbol loader--centered">
+      à          
+    </h1>
+    <h3 class="loader__loading loader--centered">
+      Loading...
+    </h3>
+    <div class="loader__left"></div>
+    <div class="loader__right"></div>
+  </div> -->
 
     <div class="menu-overlay">
     <div class="row text-center menu-overlay--100height js-menu-items">
@@ -68,7 +80,7 @@
 
 <div class="container-fluid">
     <div class="row"> <!-- Top nav icons and logo are above the frame for z-index. I ensure it always will stay above everything even the frame animations. -->
-            <div class="top-nav-icons">
+    <div class="top-nav-icons  js-nav">
         <div class="col-xs-3">
             <div href="#" class="button js-menu">
               <span class="sr">Toggle Navigation</span>
@@ -101,7 +113,7 @@
 
 
 
-        <div class="product container m-3rem-t">
+        <div class="product container js-up m-3rem-t">
   <div class="row">
     <div class="col-md-6 product--padding-0 col-md-offset-1">
       <ul id="lightSlider">
@@ -262,17 +274,50 @@
               menu.init();
               dropdown.init();
               product.init();
+              preloader.init();
 
                 var config = {
                     viewFactor : 0.3,
                     duration   : 700,
-                    distance   : "200px",
                     delayType  : "onload",
-                    scale      : 1
+                    scale      : 1,
+                    opacity    : 0
                 };
 
+                var down = {
+                    origin: 'top',
+                    distance : "3vw",
+                    reset: false,
+                };
+
+                var up = {
+                    origin: 'bottom',
+                    reset: false,
+                    distance : "3vw"
+                };
+
+                var fadeIn = {
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000
+                };
+
+                var jumbotronArrow = {
+
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000,
+                    afterReveal: function(){
+                        $('.jumbotron__downarrow').addClass('jumbotron__downarrow--animation');
+                    }
+
+                }
+
                 window.sr = ScrollReveal( config )
-                .reveal( ".js-block", { reset: false } )
+                .reveal( ".js-up", up )
+                .reveal( ".js-down", down)
+                .reveal(".js-fadeIn", fadeIn)
+                .reveal('.js-downarrow', jumbotronArrow)
                 });
 
                 $('#lightSlider').lightSlider({

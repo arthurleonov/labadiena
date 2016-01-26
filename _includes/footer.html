@@ -55,17 +55,50 @@
               menu.init();
               dropdown.init();
               product.init();
+              preloader.init();
 
                 var config = {
                     viewFactor : 0.3,
                     duration   : 700,
-                    distance   : "200px",
                     delayType  : "onload",
-                    scale      : 1
+                    scale      : 1,
+                    opacity    : 0
                 };
 
+                var down = {
+                    origin: 'top',
+                    distance : "3vw",
+                    reset: false,
+                };
+
+                var up = {
+                    origin: 'bottom',
+                    reset: false,
+                    distance : "3vw"
+                };
+
+                var fadeIn = {
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000
+                };
+
+                var jumbotronArrow = {
+
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000,
+                    afterReveal: function(){
+                        $('.jumbotron__downarrow').addClass('jumbotron__downarrow--animation');
+                    }
+
+                }
+
                 window.sr = ScrollReveal( config )
-                .reveal( ".js-block", { reset: false } )
+                .reveal( ".js-up", up )
+                .reveal( ".js-down", down)
+                .reveal(".js-fadeIn", fadeIn)
+                .reveal('.js-downarrow', jumbotronArrow)
                 });
 
                 $('#lightSlider').lightSlider({
