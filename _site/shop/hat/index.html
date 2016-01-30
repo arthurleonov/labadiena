@@ -10,14 +10,15 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-   <link rel="stylesheet" href="/labadiena/dist/bootstrap.min.css">
-   <link rel="stylesheet" href="/labadiena/dist/lightslider.css">
-   <link rel="stylesheet" href="/labadiena/dist/main.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/bootstrap.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/lightslider.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/labadiena/dist/main.css">
+
 
    <style>
       /* Ensure elements load hidden before ScrollReveal runs */
-      .js-block { visibility: hidden; }
+      .js-up, .js-fadeIn, .js-down { visibility: hidden; }
     </style>
 
 
@@ -28,6 +29,17 @@
 
 
   <body>
+
+ <!--  <div class="loader">
+    <h1 class="loader__symbol loader--centered">
+      à          
+    </h1>
+    <h3 class="loader__loading loader--centered">
+      Loading...
+    </h3>
+    <div class="loader__left"></div>
+    <div class="loader__right"></div>
+  </div> -->
 
     <div class="menu-overlay">
     <div class="row text-center menu-overlay--100height js-menu-items">
@@ -49,7 +61,7 @@
                 </div>
                 <div class="col-md-3">
                      <h3>
-                        <a class="" href="/labadiena/about/about.html">
+                        <a class="" href="/labadiena/about/">
                             About Us
                         </a>
                     </h3>
@@ -69,7 +81,7 @@
 
 <div class="container-fluid">
     <div class="row"> <!-- Top nav icons and logo are above the frame for z-index. I ensure it always will stay above everything even the frame animations. -->
-            <div class="top-nav-icons">
+    <div class="top-nav-icons  js-nav">
         <div class="col-xs-3">
             <div href="#" class="button js-menu">
               <span class="sr">Toggle Navigation</span>
@@ -154,7 +166,7 @@
     </div>
   </div>
   <div class="row">
-     <div class="col-sm-3 js-block filter-container hidden-xs">
+     <div class="col-sm-3 js-up filter-container hidden-xs">
   <div style="max-width: 8rem;">
     <h2>
       Sort By:
@@ -280,9 +292,7 @@
     </div> 
 
     
-    <script>window.jQuery || document.write('<script src="/labadiena/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="/labadiena/js/vendor/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/labadiena/dist/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="/labadiena/dist/all.min.js"></script>
 
@@ -294,17 +304,50 @@
               menu.init();
               dropdown.init();
               product.init();
+              preloader.init();
 
                 var config = {
                     viewFactor : 0.3,
                     duration   : 700,
-                    distance   : "200px",
                     delayType  : "onload",
-                    scale      : 1
+                    scale      : 1,
+                    opacity    : 0
                 };
 
+                var down = {
+                    origin: 'top',
+                    distance : "3vw",
+                    reset: false,
+                };
+
+                var up = {
+                    origin: 'bottom',
+                    reset: false,
+                    distance : "3vw"
+                };
+
+                var fadeIn = {
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000
+                };
+
+                var jumbotronArrow = {
+
+                    origin: 'top',
+                    scale: 1,
+                    delay: 1000,
+                    afterReveal: function(){
+                        $('.jumbotron__downarrow').addClass('jumbotron__downarrow--animation');
+                    }
+
+                }
+
                 window.sr = ScrollReveal( config )
-                .reveal( ".js-block", { reset: false } )
+                .reveal( ".js-up", up )
+                .reveal( ".js-down", down)
+                .reveal(".js-fadeIn", fadeIn)
+                .reveal('.js-downarrow', jumbotronArrow)
                 });
 
                 $('#lightSlider').lightSlider({
