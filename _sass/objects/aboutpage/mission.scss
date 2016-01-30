@@ -1,0 +1,30 @@
+.mission {
+  margin-top: 10rem;
+  &__leftimg {
+    padding-top: 8rem;
+  }
+  &__img {
+    padding-top: 2rem;
+  }
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+  .mission {
+    margin-top: 5rem;
+  }
+ 
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { }
