@@ -10,5 +10,5 @@ image3: "/labadiena/img/rainwater-coat-3.jpg"
 image4: "/labadiena/img/rainwater-coat-4.jpg"
 image5: "/labadiena/img/rainwater-coat-5.jpg"
 image6: "/labadiena/img/rainwater-coat-6.jpg"
-filter: [/shop/newin/, /shop/outerwear/, /shop/men/, /shop/all/, /shop/outerwear]
+filter: [/shop/newin/, /shop/outerwear/, /shop/men, /shop/all/, /shop/outerwear]
 ---
