@@ -9,5 +9,5 @@ image2: "/labadiena/img/labadiena-sweater-2.jpg"
 image3: "/labadiena/img/labadiena-sweater-3.jpg"
 image4: "/labadiena/img/labadiena-sweater-4.jpg"
 image5: "/labadiena/img/labadiena-sweater-5.jpg"
-filter: /shop/newin /shop/sweaters /shop/men /shop
+filter: [/shop/newin/index.html, /shop/outerwear, /shop/men/index.html, /shop/all]
 ---
