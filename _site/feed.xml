@@ -6,8 +6,13 @@
 </description>
     <link>http://yourdomain.com/labadiena/</link>
     <atom:link href="http://yourdomain.com/labadiena/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Sat, 30 Jan 2016 22:50:17 +0000</pubDate>
     <lastBuildDate>Sat, 30 Jan 2016 22:50:17 +0000</lastBuildDate>
+=======
+    <pubDate>Sat, 30 Jan 2016 22:49:16 +0000</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 22:49:16 +0000</lastBuildDate>
+>>>>>>> gh-pages
     <generator>Jekyll v3.0.1</generator>
     
       <item>

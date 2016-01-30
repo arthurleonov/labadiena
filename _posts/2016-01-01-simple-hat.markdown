@@ -10,5 +10,5 @@ image3:  "/labadiena/img/simple-hat-3.jpg"
 image4:  "/labadiena/img/simple-hat-4.jpg"
 image5:  "/labadiena/img/simple-hat-5.jpg"
 image6:  "/labadiena/img/simple-hat-6.jpg"
-filter: /shop/new-in/ /shop/hats/ /shop/men/ /shop/all/
+filter: /shop/new-in/ /shop/hats/ /shop/men /shop/all/
 ---

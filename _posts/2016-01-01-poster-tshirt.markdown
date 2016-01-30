@@ -8,5 +8,5 @@ image1: "/labadiena/img/poster-tshirt-1.jpg"
 image2: "/labadiena/img/poster-tshirt-2.jpg"
 image3: "/labadiena/img/poster-tshirt-3.jpg"
 image4: "/labadiena/img/poster-tshirt-4.jpg"
-filter: /shop/newin/ /shop/shirts/ /shop/men/ /shop/all/
+filter: /shop/newin/ /shop/shirts/ /shop/men /shop/all/
 ---

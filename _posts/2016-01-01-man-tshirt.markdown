@@ -10,5 +10,5 @@ image3: "/labadiena/img/man-tshirt-3.jpg"
 image4: "/labadiena/img/man-tshirt-4.jpg"
 image5: "/labadiena/img/man-tshirt-5.jpg"
 image6: "/labadiena/img/man-tshirt-6.jpg"
-filter: /shop/newin/ /shop/shirts/ /shop/men/ /shop/all/
+filter: /shop/newin /shop/shirts /shop/men /shop/all
 ---
