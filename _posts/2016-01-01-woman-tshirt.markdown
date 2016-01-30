@@ -10,5 +10,5 @@ image3: "/labadiena/img/woman-tshirt-3.jpg"
 image4: "/labadiena/img/woman-tshirt-4.jpg"
 image5: "/labadiena/img/woman-tshirt-5.jpg"
 image6: "/labadiena/img/woman-tshirt-6.jpg"
-filter: /shop/newin/ /shop/shirts/ /shop/woman/ /shop/all/
+filter: [/shop/newin, /shop/shirts, /shop/woman, /shop/all/]
 ---

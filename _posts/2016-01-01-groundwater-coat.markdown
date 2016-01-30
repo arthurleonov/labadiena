@@ -10,5 +10,5 @@ image3: "/labadiena/img/groundwater-coat-3.jpg"
 image4: "/labadiena/img/groundwater-coat-4.jpg"
 image5: "/labadiena/img/groundwater-coat-5.jpg"
 image6: "/labadiena/img/groundwater-coat-6.jpg"
-filter: [/shop/newin/index.html, /shop/outerwear, /shop/men, /shop/all]
+filter: [/shop/newin, /shop/outerwear, /shop/men, /shop/all/]
 ---
