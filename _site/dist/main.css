@@ -3,7 +3,7 @@
 body, html {
   background-color: #f4f4f4;
   height: 100%;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .padding-left-0 {
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p, label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #1b1a1c;
   letter-spacing: 0.1px;
   margin: 0 0 5px;
@@ -1329,54 +1329,49 @@ a.img:hover:after {
   }
 }
 /* Large desktop */
-.about-section {
+.spreadingword {
+  margin-top: 8rem;
+}
+.spreadingword__leftimg {
   padding-top: 8rem;
 }
-.about-section__content {
-  padding-top: 1rem;
-}
-.about-section__img {
-  padding-bottom: 2rem;
-}
-.about-section__img--margintop-big {
-  margin-top: 10rem;
-}
-.about-section__img--margintop-small {
-  margin-top: 2rem;
+.spreadingword__img {
+  padding-top: 2rem;
 }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .homepage-section {
-    padding-top: 0;
+  .spreadingword {
+    margin-top: 8rem;
   }
-  .homepage-section__mobile-title {
-    position: initial;
-    z-index: 10;
-    text-align: center;
-    line-height: 3rem;
-    font-size: 1.8rem;
+  .spreadingword__leftimg {
+    padding-top: 2rem;
+  }
+  .spreadingword__img {
+    padding-top: 2rem;
   }
 }
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  .homepage-section {
-    padding-top: 2rem;
-  }
-  .homepage-section__img {
-    padding-bottom: 2rem;
-  }
-  .homepage-section__img--margintop-big {
-    margin-top: 10rem;
-  }
-  .homepage-section__desktop-title--moveright {
-    right: 10%;
-  }
-  .homepage-section__desktop-title h1 {
-    font-size: 2.5rem;
+/* Large desktop */
+.mission {
+  margin-top: 10rem;
+}
+.mission__leftimg {
+  padding-top: 8rem;
+}
+.mission__img {
+  padding-top: 2rem;
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .mission {
+    margin-top: 5rem;
   }
 }
+/* Portrait tablet to landscape and desktop */
 /* Large desktop */
 .fs-container {
   padding: 2rem 2rem;
