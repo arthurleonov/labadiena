@@ -19,6 +19,5 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-permalink: none
-# permalink: /:title/
+permalink: /:title/
 exclude: [node_modules, js]
