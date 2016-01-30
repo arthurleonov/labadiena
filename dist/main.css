@@ -1373,6 +1373,22 @@ a.img:hover:after {
 }
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+.today {
+  margin-top: 5rem;
+}
+.today__img {
+  padding-top: 2rem;
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .mission {
+    margin-top: 5rem;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
 .fs-container {
   padding: 2rem 2rem;
   background-color: #ffffff;
