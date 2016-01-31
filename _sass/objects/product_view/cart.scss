@@ -18,6 +18,10 @@
         font-size: 2rem;
         padding-top: 1.8rem;
     }
+    &__bin {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
     &__footer {
         position: fixed;
         z-index: 1030;
@@ -27,5 +31,15 @@
         width: 25rem;
         padding: 1rem;
         border-top: 1px solid $color-black;
+        background-color: $color-white;
+    }
+    &__container {
+        overflow-y:scroll;
+        height: 77%;
+    }
+    &__items {
+        margin-top: 1rem;
+        border-bottom: 1px solid $color-black;
+        padding-bottom: 1rem;
     }
 }

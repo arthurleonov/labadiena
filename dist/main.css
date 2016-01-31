@@ -1300,6 +1300,10 @@ a.img:hover:after {
   font-size: 2rem;
   padding-top: 1.8rem;
 }
+.cart__bin {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
 .cart__footer {
   position: fixed;
   z-index: 1030;
@@ -1309,6 +1313,16 @@ a.img:hover:after {
   width: 25rem;
   padding: 1rem;
   border-top: 1px solid #1b1a1c;
+  background-color: #ffffff;
+}
+.cart__container {
+  overflow-y: scroll;
+  height: 77%;
+}
+.cart__items {
+  margin-top: 1rem;
+  border-bottom: 1px solid #1b1a1c;
+  padding-bottom: 1rem;
 }
 
 .story {
