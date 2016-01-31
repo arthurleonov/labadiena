@@ -434,6 +434,13 @@ hr.width-20 {
   text-decoration: none;
 }
 
+.right-icons {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 0.95rem;
+  display: inline-block;
+}
+
 .top-nav-icons {
   position: fixed;
   width: 100%;
@@ -1272,6 +1279,38 @@ a.img:hover:after {
     padding-right: 15px;
   }
 }
+.cart {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  min-width: 350px;
+  right: 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ffF;
+  z-index: 999999999999999999;
+}
+.cart__header {
+  border-bottom: 1px solid #1b1a1c;
+  padding-bottom: 1rem;
+}
+.cart__title {
+  border-bottom: 1px solid #1b1a1c;
+}
+.cart__cross {
+  font-size: 2rem;
+  padding-top: 1.8rem;
+}
+.cart__footer {
+  position: fixed;
+  z-index: 1030;
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+  width: 25rem;
+  padding: 1rem;
+  border-top: 1px solid #1b1a1c;
+}
+
 .story {
   margin-top: 7rem;
 }
