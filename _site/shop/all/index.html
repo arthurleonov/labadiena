@@ -28,7 +28,7 @@
 </head>
 
 
-  <body>
+  <body class="js-body">
 
  <!--  <div class="loader">
     <h1 class="loader__symbol loader--centered">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-3">
                     <h3>
-                        <a class="" href="/labadiena/shop/all/">
+                        <a class="hover" href="/labadiena/shop/all/">
                             Shop
                         </a>
                     </h3>
@@ -442,15 +442,19 @@
 
     <script src="/labadiena/dist/all.min.js"></script>
 
+    <script src="/labadiena/dist/TweenMax.min.js"></script>
+
     <script src="/labadiena/dist/scrollreveal.min.js"></script>
 
 
     <script>
         $(document).ready(function() {
-              menu.init();
-              dropdown.init();
-              product.init();
-              preloader.init();
+
+                menu.init();
+                dropdown.init();
+                product.init();
+                preloader.init();
+                cart.init();
 
                 var config = {
                     viewFactor : 0.3,

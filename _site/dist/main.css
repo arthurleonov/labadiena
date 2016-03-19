@@ -1288,6 +1288,8 @@ a.img:hover:after {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
   background-color: #ffF;
   z-index: 999999999999999999;
+  -webkit-transform: translate(400px, 0px);
+          transform: translate(400px, 0px);
 }
 .cart__header {
   border-bottom: 1px solid #1b1a1c;

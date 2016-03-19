@@ -12,10 +12,10 @@ layout: default
     </div>
     <div class="col-md-4 product--padding-0">
       <div class="product__right-container">
-        <h2>
+        <h2 class='js-name'>
           {{page.title}}
         </h2>
-        <h4>
+        <h4 class="js-price">
           {{page.price}}
         </h4>
         <br/>
@@ -28,7 +28,7 @@ layout: default
             {% include shop/sizes.html %}
           </div>
           <div class="col-md-6">
-            <button class="btn btn__default btn--fill btn--padding-05 btn--width-100">
+            <button class="btn btn__default btn--fill btn--padding-05 btn--width-100 js-cartToggle">
               Add to Bag
             </button>
           </div>

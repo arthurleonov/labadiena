@@ -1,4 +1,4 @@
-<div class="cart">
+<div class="cart js-cartWrapper">
   <div class="container-fluid cart__header">
     <div class="row">
       <div class="col-xs-8">
@@ -7,14 +7,14 @@
         </h1>
       </div>
       <div class="col-xs-4 text-right">
-        <i class="fa fa-times cart__cross"></i>
+        <i class="fa fa-times cart__cross js-cartclose"></i>
       </div>
     </div>
   </div>
   <div class="container-fluid cart__container">
     <div class="row cart__items">
       <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
+          <img class="img-responsive js-image" src="{{page.image1}}"></img>
       </div>
       <div class="col-xs-6">
         <h4>
@@ -25,7 +25,7 @@
         </p>
       </div>
       <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
+          <i class="fa fa-trash-o cart__bin js-cartBin"></i>
       </div>
     </div>
     <div class="row cart__items">
@@ -41,106 +41,14 @@
         </p>
       </div>
       <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div>
-    <div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div>
-    <div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div><div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div><div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div><div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
-      </div>
-    </div><div class="row cart__items">
-      <div class="col-xs-4">
-          <img class="img-responsive" src="{{page.image1}}"></img>
-      </div>
-      <div class="col-xs-6">
-        <h4>
-          {{page.title}}
-        </h4>
-        <p>
-          {{page.price}}
-        </p>
-      </div>
-      <div class="col-xs-2">
-          <i class="fa fa-trash-o cart__bin"></i>
+          <i class="fa fa-trash-o cart__bin js-cartBin"></i>
       </div>
     </div>
   </div>
   <div class="container-fluid cart__footer">
     <div class="row">
       <div class="col-xs-12">
-        <button class="btn btn__default btn--fill btn--padding-05 btn--width-100">Proceed to Checkout</button>
+        <button class="btn btn__default btn--fill btn--padding-05 btn--width-100 js-cartclose">Proceed to Checkout</button>
       </div>
     </div>
   </div>
