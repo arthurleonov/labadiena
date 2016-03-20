@@ -1022,7 +1022,7 @@ a.img:hover:after {
   }
 }
 .homepage-section {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .homepage-section__mobile-title {
   position: absolute;
@@ -1113,7 +1113,7 @@ a.img:hover:after {
 }
 .about__letter-a {
   font-size: 10rem;
-  padding-top: 5rem;
+  padding-top: 6.5rem;
   color: #ffffff;
 }
 .about__paragraph {
@@ -1129,6 +1129,7 @@ a.img:hover:after {
   }
   .about__bg-tilted {
     position: relative;
+    margin-bottom: 10rem;
   }
   .about__bg-tilted:before {
     height: 400px;
