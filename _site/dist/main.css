@@ -38,6 +38,11 @@ body, html {
   padding-top: 10rem;
 }
 
+.img-responsive {
+	width: 100%;
+}
+
+
 .centered {
   position: absolute;
   top: 5%;
